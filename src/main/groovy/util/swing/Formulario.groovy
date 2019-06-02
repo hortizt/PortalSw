@@ -52,6 +52,7 @@ swingBuilder.edt {  // edt method makes sure UI is build on Event Dispatch Threa
 
         panel(constraints: BorderLayout.SOUTH) {
             button text: 'Save', actionPerformed: {
+                address.street='ddddddddd'
                 println address
             }
         }
