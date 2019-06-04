@@ -39,22 +39,14 @@ class Peticion {
     String toString() { "Peticion[idpeticion=$idpeticion,idservicio=$idservicio,numpeticion=$numpeticion]" }
 }
 
-def peticion= new Peticion(idpeticion: 'xxx',idservicio: 'yyy')
+def peticion= new Peticion()
 
-
-ObservableList   data = [
-        [name: 'Anthony', color: 'mediumBlue'],
-        [name: 'Greg', color: 'brightYellow'],
-        [name: 'Jeff', color: 'purple'],
-        [name: 'Murray', color: 'brightRed']
-]
 
 DbUtilMQM.bootStrap()
 def peticiones = DbUtilMQM.sql.dataSet('PS_PETICION')
 
 swing = new SwingBuilder()
 frame = swing.frame(title:'Demo',size:[1000,1000]) {
-
     panel(id: 'principal', layout: new BorderLayout()) {
         panel(constraints: BorderLayout.WEST, border: compoundBorder([emptyBorder(10), titledBorder('Menu')])) {
             tree(createMenuTree()).getSelectionModel().addTreeSelectionListener({ e ->
@@ -83,15 +75,20 @@ frame = swing.frame(title:'Demo',size:[1000,1000]) {
                                     }
                                     td {
                                         button text: 'enviar', actionPerformed: {
-                                            //def resultado=DbUtilMQM.sql.rows('SELECT * FROM PS_PETICION')
-                                            //println numPeticionField.text
-                                            //println peticion
-                                            def result= peticiones.rows().findAll{it.PT_NUMPETICION==numPeticionField.text.toInteger()}
-                                            result.each {
-                                                peticion.setIdservicio(it.PT_IDSERVICIO)
-                                                peticion.setIdpeticion(it.PT_IDPETICION)
+                                            peticion.idservicio=""
+                                            peticion.idpeticion=""
+                                            def result = peticiones.rows().findAll {
+                                                it.PT_NUMPETICION == numPeticionField.text.toInteger()
                                             }
+                                            if (result.size() == 1){
+                                                def aux= result[0]
+                                                peticion.idservicio=aux.PT_IDSERVICIO
+                                                peticion.idpeticion=aux.PT_IDPETICION
+                                            } else
+                                            {
 
+
+                                            }
 
                                         }
                                     }
