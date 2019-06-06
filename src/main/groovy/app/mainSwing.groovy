@@ -25,18 +25,19 @@ def numPeticion
 
 @Bindable
 class Peticion {
-    def idpeticion
-    def idservicio
-    def numpeticion
-    def tipopeticion
-    def estadopeticion
-    def estadoatiempo
-    def codigoerror
-    def mensajeerror
-    def user
-    def descripcion
-    def fechacreacion
-    String toString() { "Peticion[idpeticion=$idpeticion,idservicio=$idservicio,numpeticion=$numpeticion]" }
+    def PT_IDPETICION
+    def PT_IDSERVICIO
+    def PT_NUMPETICION
+    def PT_TIPOPETICION
+    def PT_ESTADOPETICION
+    def PT_ESTADOATIEMPO
+    def PT_CODIGOERROR
+    def PT_MENSAJEERROR
+    def PT_USER
+    def PT_DESCRIPCION
+    def PT_FECHACREACION
+    def PT_FECHAMODIFICACION
+    String toString() { "Peticion[idpeticion=$PT_IDPETICION,idservicio=$PT_IDSERVICIO,numpeticion=$PT_NUMPETICION]" }
 }
 
 def peticion= new Peticion()
@@ -76,16 +77,22 @@ frame = swing.frame(title:'Demo',size:[1000,800]) {
                                     td {
                                         button text: 'enviar', actionPerformed: {
                                             peticion.properties.each { key,value->
-                                                println key
-                                                if (key != 'class') peticion[key]=''
+                                                //println key
+                                                if( !(key in ['class','propertyChangeListeners']) ) peticion[key]=null
                                             }
                                             def result = peticiones.rows().findAll {
                                                 it.PT_NUMPETICION == numPeticionField.text.toInteger()
                                             }
                                             if (result.size() == 1){
-                                                def aux= result[0]
-                                                peticion.idservicio=aux.PT_IDSERVICIO
-                                                peticion.idpeticion=aux.PT_IDPETICION
+                                                aux=result[0]
+                                                /*
+                                                peticion.properties.each { key,value->
+                                                    if( !(key in ['class','propertyChangeListeners']) ) peticion[key]=aux[key]
+                                                }
+                                                 */
+                                                Peticion.declaredFields.collect{
+                                                    if( it.name.substring(0,2)=='PT' ) peticion[it.name]=aux[it.name]
+                                                }
                                                 mensajelbl.text='   '
                                             } else
                                             {
@@ -108,22 +115,46 @@ frame = swing.frame(title:'Demo',size:[1000,800]) {
                         }
                         panel(constraints: BorderLayout.CENTER, border: compoundBorder([emptyBorder(10), titledBorder('Informacion de la peticion:')])) {
                            tableLayout {
+                               Peticion.declaredFields.collect{
+                                   aux=it.name
+                                   if( it.name.substring(0,2)=='PT' ) {
+                                       tr {
+                                           td {
+                                               label aux                                           }
+                                           td {
+                                               textField(text: bind(source: peticion, sourceProperty: aux), columns: 20)
+                                           }
+                                       }
+                                   }
+                               }
+
+                                /*
                                tr {
                                    td {
                                        label 'Num Servicio:'
                                    }
                                    td {
-                                       textField(text: bind(source: peticion, sourceProperty: 'idservicio'), columns: 20)
+                                       textField(text: bind(source: peticion, sourceProperty: 'PT_IDSERVICIO'), columns: 20)
                                     }
                                 }
                                 tr {
                                     td {
-                                        label 'Num Peticion:'
+                                        label 'Id Peticion:'
                                     }
                                     td {
-                                        textField(text: bind(source: peticion, sourceProperty: 'idpeticion'), columns: 20)
+                                        textField(text: bind(source: peticion, sourceProperty: 'PT_IDPETICION'), columns: 20)
                                     }
                                 }
+                               tr {
+                                   td {
+                                       label 'Num Peticion:'
+                                   }
+                                   td {
+                                       textField(text: bind(source: peticion, sourceProperty: 'PT_NUMPETICION'), columns: 20)
+                                   }
+                               }
+                                */
+
                                }
                         }
                         panel(constraints: BorderLayout.SOUTH, border: compoundBorder([emptyBorder(10), titledBorder('Detalle Transaccion:')])) {

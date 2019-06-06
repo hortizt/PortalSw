@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe6b9646-0501-44e1-8702-376deb35a6f2" name="Default Changelist" comment="Actualización">
+      <change afterPath="$PROJECT_DIR$/.idea/groovyc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure3$_closure8$_closure10$_closure14.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure3$_closure8$_closure10$_closure15.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure3$_closure8$_closure10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure3$_closure8$_closure11$_closure16.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure3$_closure8$_closure11$_closure17.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure3$_closure8$_closure11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure3$_closure8$_closure9$_closure12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure3$_closure8$_closure9$_closure13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure3$_closure8$_closure9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure3$_closure8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure4$_closure18.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2$_closure7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1$_closure2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario$_run_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/Formulario.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/META-INF/PortalSw.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/Peticion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainFrame$_getSeguimientoServicios_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure3$_closure5$_closure6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure3$_closure5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4$_closure7$_closure10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4$_closure7$_closure11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4$_closure7$_closure9$_closure12$_closure13$_closure15.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4$_closure7$_closure9$_closure12$_closure13$_closure16.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4$_closure7$_closure9$_closure12$_closure13$_closure17.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4$_closure7$_closure9$_closure12$_closure13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4$_closure7$_closure9$_closure12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4$_closure7$_closure9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4$_closure7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4$_closure8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/Peticiones$_getPeticionesTable_closure1$_closure2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/Peticiones$_getPeticionesTable_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/Peticiones.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure128$_closure131.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure128$_closure132.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure128$_closure133.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure128$_closure134.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure128.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure129$_closure135$_closure137.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure129$_closure135$_closure138.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure129$_closure135.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure129$_closure136$_closure139.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure129$_closure136$_closure140.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure129$_closure136.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure129.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28$_closure130.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testActionClosures_closure28.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testAttributeOrdering_closure35.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderAttachment_closure63$_closure228.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderAttachment_closure63$_closure229.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderAttachment_closure63$_closure230.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderAttachment_closure63$_closure231.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderAttachment_closure63.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderLayoutConstraints_closure31$_closure142$_closure143$_closure144.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderLayoutConstraints_closure31$_closure142$_closure143.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderLayoutConstraints_closure31$_closure142.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderLayoutConstraints_closure31.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderLayout_closure5$_closure79.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderLayout_closure5$_closure80$_closure81.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderLayout_closure5$_closure80.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorderLayout_closure5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorders_closure62$_closure227.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBorders_closure62.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBoxLayout_closure26$_closure122.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBoxLayout_closure26$_closure123.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBoxLayout_closure26$_closure124.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBoxLayout_closure26.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testBuilderProperties_closure18.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testButtonGroupOnlyForButtons_closure9$_closure87.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testButtonGroupOnlyForButtons_closure9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testButtonGroup_closure8$_closure85.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testButtonGroup_closure8$_closure86.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testButtonGroup_closure8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testClientProperties_closure67.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testCollectionNodes_closure39$_closure160.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testCollectionNodes_closure39.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testComboBox_closure23.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testContainment_closure58$_closure206$_closure209$_closure210.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testContainment_closure58$_closure206$_closure209.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testContainment_closure58$_closure206.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testContainment_closure58$_closure207$_closure211$_closure212.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testContainment_closure58$_closure207$_closure211.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testContainment_closure58$_closure207.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testContainment_closure58$_closure208$_closure213.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testContainment_closure58$_closure208.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testContainment_closure58.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testDialogs_closure14$_closure95.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testDialogs_closure14$_closure96.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testDialogs_closure14.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testDispose_closure56.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testDoLater_closure45.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testDoLater_closure46$_closure188.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testDoLater_closure46.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testDoOutside_closure47$_closure189.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testDoOutside_closure47$_closure190$_closure191.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testDoOutside_closure47$_closure190.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testDoOutside_closure47.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEDT_closure43.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEDT_closure44$_closure187.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEDT_closure44.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure163$_closure174.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure163.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure164$_closure175$_closure176.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure164$_closure175.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure164.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure165$_closure177.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure165$_closure178$_closure179.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure165$_closure178.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure165.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure166$_closure180.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure166$_closure181$_closure182.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure166$_closure181.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure166.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure167$_closure183.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure167$_closure184.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure167.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure168.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure169.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure170$_closure185.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure170.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure171.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure172.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure173$_closure186.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42$_closure173.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testEnhancedValueArguments_closure42.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testFactoryCornerCases_closure40$_closure161.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testFactoryCornerCases_closure40$_closure162.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testFactoryCornerCases_closure40.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testFactoryLogging_closure41.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testFormattedTextField_closure19.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testFrames_closure13$_closure94.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testFrames_closure13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testGROOVY1837ReuseAction_closure37.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testGridBagFactory_closure4$_closure74.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testGridBagFactory_closure4$_closure75$_closure77.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testGridBagFactory_closure4$_closure75.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testGridBagFactory_closure4$_closure76$_closure78.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testGridBagFactory_closure4$_closure76.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testGridBagFactory_closure4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testImageIcon_closure64.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure48$_closure192.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure48$_closure193.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure48.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure49$_closure194$_closure195.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure49$_closure194.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure49.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure50$_closure196$_closure197$_closure198.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure50$_closure196$_closure197.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure50$_closure196.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure50.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure51$_closure199$_closure200.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure51$_closure199.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure51.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure52$_closure201$_closure202.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure52$_closure201.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure52.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure53$_closure203$_closure204.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure53$_closure203.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testJumbledThreading_closure53.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testKeyStrokeAction_closure68$_closure239.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testKeyStrokeAction_closure68$_closure240.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testKeyStrokeAction_closure68$_closure241.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testKeyStrokeAction_closure68.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testKeystrokesWithinActions_closure27$_closure125$_closure127.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testKeystrokesWithinActions_closure27$_closure125.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testKeystrokesWithinActions_closure27$_closure126.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testKeystrokesWithinActions_closure27.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLayoutConstraintsProperty_closure6$_closure82.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLayoutConstraintsProperty_closure6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLayoutCreation_closure3$_closure72$_closure73.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLayoutCreation_closure3$_closure72.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLayoutCreation_closure3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testList_closure24$_closure117.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testList_closure24.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLookAndFeel_closure60$_closure219.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLookAndFeel_closure60$_closure220.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLookAndFeel_closure60$_closure221.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLookAndFeel_closure60$_closure222.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLookAndFeel_closure60$_closure223.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLookAndFeel_closure60$_closure224.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLookAndFeel_closure60$_closure225$_closure226.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLookAndFeel_closure60$_closure225.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testLookAndFeel_closure60.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testMenus_closure59$_closure214$_closure216$_closure217$_closure218.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testMenus_closure59$_closure214$_closure216$_closure217.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testMenus_closure59$_closure214$_closure216.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testMenus_closure59$_closure214.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testMenus_closure59$_closure215.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testMenus_closure59.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testMisplacedActionsAreIgnored_closure25$_closure118$_closure120.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testMisplacedActionsAreIgnored_closure25$_closure118.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testMisplacedActionsAreIgnored_closure25$_closure119$_closure121.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testMisplacedActionsAreIgnored_closure25$_closure119.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testMisplacedActionsAreIgnored_closure25.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testMultiLookAndFeel_closure61.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNamedWidgetCreation_closure2$_closure71.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNamedWidgetCreation_closure2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNestedWindows_closure12$_closure91$_closure93.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNestedWindows_closure12$_closure91.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNestedWindows_closure12$_closure92.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNestedWindows_closure12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNoParent_closure66$_closure237$_closure238.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNoParent_closure66$_closure237.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNoParent_closure66.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNodeCreation_closure16$_closure100$_closure101.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNodeCreation_closure16$_closure100.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNodeCreation_closure16$_closure99.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testNodeCreation_closure16.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testPackAndShow_closure57.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testParallelBuild_closure54$_closure205.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testParallelBuild_closure54.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testParallelBuild_closure55.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testRenderer_closure65$_closure232$_closure235.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testRenderer_closure65$_closure232.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testRenderer_closure65$_closure233.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testRenderer_closure65$_closure234$_closure236.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testRenderer_closure65$_closure234.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testRenderer_closure65.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testScrollPane_closure22$_closure115$_closure116.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testScrollPane_closure22$_closure115.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testScrollPane_closure22.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSeparators_closure38$_closure157$_closure158.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSeparators_closure38$_closure157$_closure159.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSeparators_closure38$_closure157.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSeparators_closure38.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSetAcceleratorShortcuts_closure30$_closure141.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSetAcceleratorShortcuts_closure30.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSetAccelerator_closure29.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSetConstraints_closure32$_closure145.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSetConstraints_closure32.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSetMnemonic_closure17$_closure102.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSetMnemonic_closure17$_closure103$_closure104$_closure105.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSetMnemonic_closure17$_closure103$_closure104.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSetMnemonic_closure17$_closure103.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSetMnemonic_closure17.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSetToolTipText_closure33$_closure146.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSetToolTipText_closure33.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSplitPane_closure11$_closure88$_closure89.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSplitPane_closure11$_closure88$_closure90.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSplitPane_closure11$_closure88.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testSplitPane_closure11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTabbedPaneRenamedProperties_closure21$_closure114.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTabbedPaneRenamedProperties_closure21.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTabbedPane_closure20$_closure106.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTabbedPane_closure20$_closure107.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTabbedPane_closure20$_closure108.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTabbedPane_closure20$_closure109$_closure111.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTabbedPane_closure20$_closure109.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTabbedPane_closure20$_closure110$_closure112.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTabbedPane_closure20$_closure110$_closure113.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTabbedPane_closure20$_closure110.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTabbedPane_closure20.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTableLayout_closure34$_closure147$_closure150.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTableLayout_closure34$_closure147.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTableLayout_closure34$_closure148$_closure151$_closure152.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTableLayout_closure34$_closure148$_closure151.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTableLayout_closure34$_closure148.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTableLayout_closure34$_closure149$_closure153$_closure154$_closure155.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTableLayout_closure34$_closure149$_closure153$_closure154.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTableLayout_closure34$_closure149$_closure153.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTableLayout_closure34$_closure149.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testTableLayout_closure34.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testWidgetCreation_closure7$_closure83$_closure84.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testWidgetCreation_closure7$_closure83.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testWidgetCreation_closure7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testWidgetId_closure1$_closure69.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testWidgetId_closure1$_closure70.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testWidgetId_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testWidgetPassthroughConstraints_closure36$_closure156.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testWidgetPassthroughConstraints_closure36.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testWidget_closure10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testWindows_closure15$_closure97.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testWindows_closure15$_closure98.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest$_testWindows_closure15.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/swing/SwingBuilderTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/app/main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/slider/Animation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/slider/ArrowPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/slider/ArrowPanel2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/slider/SideBar$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/slider/SideBar$SideBarMode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/slider/SideBar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/slider/SidebarAnimation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/slider/SidebarSection$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/slider/SidebarSection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/tabledialog/DialogTable$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/tabledialog/DialogTable$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/tabledialog/DialogTable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/tabledialog/DialogTableTester$MyTableCellRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/tabledialog/DialogTableTester$MyTableModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/main/java/swing/tabledialog/DialogTableTester.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure6$_closure10$_closure13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure6$_closure10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure6$_closure8$_closure11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure6$_closure8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure6$_closure9$_closure12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure6$_closure9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure7$_closure14.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure7$_closure15.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure7$_closure16.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure7$_closure17$_closure18.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure7$_closure17.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3$_closure7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure4$_closure19.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure4$_closure20.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure4$_closure21.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure4$_closure22.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2$_closure5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets$_run_closure2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/swing/Widgets.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/test/groovy/util/DbUtilTest$_testMQMQuery_closure1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/test/groovy/util/DbUtilTest$_testMQMQuery_closure2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PortalSw/test/groovy/util/DbUtilTest$_testMQMQuery_closure3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/docswing" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/tareas" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/tareas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/DbUtilMQM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/DbUtilMQM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PortalSw/test/groovy/util/DbUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PortalSw/test/groovy/util/DbUtilTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/prueba.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/prueba.groovy" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/util/DbUtilTest.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+              <folding>
+                <element signature="e#26#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/util/DbUtil.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="79" column="61" lean-forward="true" selection-start-line="79" selection-end-line="79" selection-end-column="61" />
+              <folding>
+                <element signature="e#25#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/prueba.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Doc/tareas">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>list</find>
+      <find>tree</find>
+      <find>layout</find>
+      <find>VARCHAR(10),</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GroovyConsoleState">
+    <option name="list">
+      <list>
+        <Entry>
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_5.groovy" />
+          <option name="moduleName" value="PortalSw" />
+          <option name="title" value="PortalSw (Groovy 2.5.6)" />
+        </Entry>
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/groovy/swing/slider/SidebarAnimation.java" />
+        <option value="$PROJECT_DIR$/src/main/groovy/app/SliderTester.java" />
+        <option value="$PROJECT_DIR$/src/main/groovy/app/main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swing/slider/SidebarSection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/main.java" />
+        <option value="$PROJECT_DIR$/src/main/groovy/app/main.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/swing/tabledialog/DialogTableTester.java" />
+        <option value="$PROJECT_DIR$/src/main/groovy/app/mainFrame.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/util/Peticiones.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/util/swing/SwingBuilderTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/util/swing/pruebas.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/util/swing/Formulario.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/util/DbUtilTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/util/DbUtil.groovy" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_5.groovy" />
+        <option value="$PROJECT_DIR$/Doc/tareas" />
+        <option value="$PROJECT_DIR$/src/main/groovy/prueba.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="117" />
+    <option name="y" value="234" />
+    <option name="width" value="985" />
+    <option name="height" value="720" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PortalSw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortalSw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortalSw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortalSw" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortalSw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortalSw" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortalSw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortalSw" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PortalSw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/swing" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/swing" />
+      <recent name="$PROJECT_DIR$/src/main/groovy/app" />
+      <recent name="$PROJECT_DIR$/src/main/groovy/swing" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Groovy.mainSwing">
+    <configuration name="GroovyTestSuite" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="PortalSw" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/test/groovy/util/GroovyTestSuite.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/test/groovy/util" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mainSwing" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="PortalSw" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/main/groovy/app" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="prueba" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="PortalSw" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/main/groovy/prueba.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/main/groovy" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DbUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PortalSw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.groovy.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.groovy.util" />
+      <option name="MAIN_CLASS_NAME" value="test.groovy.util.DbUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DbUtilTest.testMQMQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PortalSw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.groovy.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.groovy.util" />
+      <option name="MAIN_CLASS_NAME" value="test.groovy.util.DbUtilTest" />
+      <option name="METHOD_NAME" value="testMQMQuery" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Groovy.mainSwing" />
+        <item itemvalue="Groovy.prueba" />
+        <item itemvalue="Groovy.GroovyTestSuite" />
+        <item itemvalue="JUnit.DbUtilTest.testMQMQuery" />
+        <item itemvalue="JUnit.DbUtilTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe6b9646-0501-44e1-8702-376deb35a6f2" name="Default Changelist" comment="" />
+      <created>1559065522015</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559065522015</updated>
+    </task>
+    <task id="LOCAL-00001" summary="201905310800">
+      <created>1559195771207</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559195771207</updated>
+    </task>
+    <task id="LOCAL-00002" summary="201905310800">
+      <created>1559231717877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559231717877</updated>
+    </task>
+    <task id="LOCAL-00003" summary="201905310800">
+      <created>1559339682721</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559339682729</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Actualización">
+      <created>1559476670386</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559476670386</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Actualización">
+      <created>1559498830110</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559498830110</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Actualización">
+      <created>1559667578083</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559667578083</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Actualización">
+      <created>1559839281764</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559839281764</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="DbUtilTest_testMQMQuery - 2019.06.02 at 19h 09m 12s.xml">
+      <configuration name="DbUtilTest.testMQMQuery" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DbUtilTest - 2019.06.02 at 19h 09m 36s.xml">
+      <configuration name="DbUtilTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DbUtilTest - 2019.06.02 at 19h 10m 30s.xml">
+      <configuration name="DbUtilTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DbUtilTest_testMQMQuery - 2019.06.02 at 19h 11m 11s.xml">
+      <configuration name="DbUtilTest.testMQMQuery" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DbUtilTest_testMQMQuery - 2019.06.02 at 19h 32m 54s.xml">
+      <configuration name="DbUtilTest.testMQMQuery" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1213" height="999" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11653813" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49957156" visible="true" weight="0.32528734" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3954023" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32988507" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32988507" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32988507" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.50042844" side_tool="true" weight="0.22643678" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="201905310800" />
+    <MESSAGE value="Actualización" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualización" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/groovy/app/main.groovy</url>
+          <line>4</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/groovy/app/mainFrame.groovy</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/groovy/util/Peticiones.groovy</url>
+          <line>9</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy</url>
+          <line>172</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/groovy/util/DbUtilTest.groovy</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/groovy/util/DbUtilTest.groovy</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/groovy/prueba.groovy</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>Peticion.getProperties()</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Peticion.getMetaPropertyValues()</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Peticion.getAnnotation()</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Peticion.properties()</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Peticion.Properties()</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>it</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>peticion</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>peticion[key]</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>peticion[it.value]</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/swing/slider/ArrowPanel.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swing/slider/SidebarAnimation.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swing/slider/Animation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swing/slider/ArrowPanel2.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-655">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swing/slider/SidebarSection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swing/slider/SideBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-607">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swing/tabledialog/DialogTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/app/main.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swing/tabledialog/DialogTableTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/app/mainFrame.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="68" column="44" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="44" />
+          <folding>
+            <element signature="e#25#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/Peticiones.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="e#26#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/swing/SwingBuilderTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="1372" column="14" selection-start-line="1372" selection-start-column="14" selection-end-line="1372" selection-end-column="14" />
+          <folding>
+            <element signature="e#759#822#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/swing/widgets.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="79" column="31" lean-forward="true" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+          <folding>
+            <element signature="e#15#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/current/src.zip!/javax/swing/tree/DefaultTreeSelectionModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="183" column="14" lean-forward="true" selection-start-line="183" selection-start-column="14" selection-end-line="183" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/swing/Formulario.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/util/GroovyTestSuite.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Doc/docswing" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_5.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/current/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Doc/tareas">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/DbUtil.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/util/DbUtilTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#26#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/prueba.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="79" column="61" lean-forward="true" selection-start-line="79" selection-end-line="79" selection-end-column="61" />
+          <folding>
+            <element signature="e#25#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>commons-logging</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>PortalSw</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,2 +1,6 @@
-- crear una tabla
-invocar una funcion via nombre de la lista que se ha creado
+- mensaje que no encuentra nada
+- los campos no se puedan editar
+-limpiar los campos peticion con propiedades en vende uno a uno
+-refacctorizar y limpiar codigo comentado
+-montar tabla
+-test para el GUI
