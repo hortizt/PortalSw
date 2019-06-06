@@ -46,7 +46,7 @@ DbUtilMQM.bootStrap()
 def peticiones = DbUtilMQM.sql.dataSet('PS_PETICION')
 
 swing = new SwingBuilder()
-frame = swing.frame(title:'Demo',size:[1000,1000]) {
+frame = swing.frame(title:'Demo',size:[1000,800]) {
     panel(id: 'principal', layout: new BorderLayout()) {
         panel(constraints: BorderLayout.WEST, border: compoundBorder([emptyBorder(10), titledBorder('Menu')])) {
             tree(createMenuTree()).getSelectionModel().addTreeSelectionListener({ e ->
@@ -75,8 +75,10 @@ frame = swing.frame(title:'Demo',size:[1000,1000]) {
                                     }
                                     td {
                                         button text: 'enviar', actionPerformed: {
-                                            peticion.idservicio=""
-                                            peticion.idpeticion=""
+                                            peticion.properties.each { key,value->
+                                                println key
+                                                if (key != 'class') peticion[key]=''
+                                            }
                                             def result = peticiones.rows().findAll {
                                                 it.PT_NUMPETICION == numPeticionField.text.toInteger()
                                             }
@@ -84,16 +86,22 @@ frame = swing.frame(title:'Demo',size:[1000,1000]) {
                                                 def aux= result[0]
                                                 peticion.idservicio=aux.PT_IDSERVICIO
                                                 peticion.idpeticion=aux.PT_IDPETICION
+                                                mensajelbl.text='   '
                                             } else
                                             {
-
+                                                mensajelbl.text='No existe petición '
 
                                             }
 
                                         }
                                     }
                                     td {
-                                        label '                                               '
+                                        label  text: '                                               '
+                                    }
+                                }
+                                tr {
+                                    td {
+                                        label id:'mensajelbl', text: '   '
                                     }
                                 }
                             }
