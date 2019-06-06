@@ -77,7 +77,6 @@ frame = swing.frame(title:'Demo',size:[1000,800]) {
                                     td {
                                         button text: 'enviar', actionPerformed: {
                                             peticion.properties.each { key,value->
-                                                //println key
                                                 if( !(key in ['class','propertyChangeListeners']) ) peticion[key]=null
                                             }
                                             def result = peticiones.rows().findAll {
@@ -85,11 +84,6 @@ frame = swing.frame(title:'Demo',size:[1000,800]) {
                                             }
                                             if (result.size() == 1){
                                                 aux=result[0]
-                                                /*
-                                                peticion.properties.each { key,value->
-                                                    if( !(key in ['class','propertyChangeListeners']) ) peticion[key]=aux[key]
-                                                }
-                                                 */
                                                 Peticion.declaredFields.collect{
                                                     if( it.name.substring(0,2)=='PT' ) peticion[it.name]=aux[it.name]
                                                 }
@@ -99,7 +93,6 @@ frame = swing.frame(title:'Demo',size:[1000,800]) {
                                                 mensajelbl.text='No existe petición '
 
                                             }
-
                                         }
                                     }
                                     td {
@@ -128,33 +121,6 @@ frame = swing.frame(title:'Demo',size:[1000,800]) {
                                    }
                                }
 
-                                /*
-                               tr {
-                                   td {
-                                       label 'Num Servicio:'
-                                   }
-                                   td {
-                                       textField(text: bind(source: peticion, sourceProperty: 'PT_IDSERVICIO'), columns: 20)
-                                    }
-                                }
-                                tr {
-                                    td {
-                                        label 'Id Peticion:'
-                                    }
-                                    td {
-                                        textField(text: bind(source: peticion, sourceProperty: 'PT_IDPETICION'), columns: 20)
-                                    }
-                                }
-                               tr {
-                                   td {
-                                       label 'Num Peticion:'
-                                   }
-                                   td {
-                                       textField(text: bind(source: peticion, sourceProperty: 'PT_NUMPETICION'), columns: 20)
-                                   }
-                               }
-                                */
-
                                }
                         }
                         panel(constraints: BorderLayout.SOUTH, border: compoundBorder([emptyBorder(10), titledBorder('Detalle Transaccion:')])) {
@@ -167,7 +133,6 @@ frame = swing.frame(title:'Demo',size:[1000,800]) {
                                 data.addPropertyChangeListener({ e -> model.fireTableDataChanged() })
                             }
                                                          */
-
                         }
                     }
             panelServicios =
@@ -176,12 +141,6 @@ frame = swing.frame(title:'Demo',size:[1000,800]) {
                     }
         }
     }
-
-/*    bean peticion,
-            idpeticion: bind { idpeticionField.text },
-            idservicio: bind { idservicioField.text }
-            */
-
 
 }
 
