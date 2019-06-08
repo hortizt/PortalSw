@@ -5,7 +5,9 @@ import main.groovy.util.Peticiones
 
 import java.awt.BorderLayout
 import javax.swing.BorderFactory
+import java.awt.Color
 import java.awt.FlowLayout
+import java.awt.Font
 import java.awt.GridLayout
 import groovy.swing.SwingBuilder
 import javax.swing.tree.DefaultMutableTreeNode
@@ -21,7 +23,10 @@ def panelPeticiones,panelServicios
 def menu = [:]
 
 
+ObservableList people = [ [name:"Mary", age:18], [name:"Tom", age:25] ]
 def numPeticion
+Font fontlbl = new Font("Courier", Font.PLAIN, 13)
+
 
 @Bindable
 class Peticion {
@@ -40,14 +45,72 @@ class Peticion {
     String toString() { "Peticion[idpeticion=$PT_IDPETICION,idservicio=$PT_IDSERVICIO,numpeticion=$PT_NUMPETICION]" }
 }
 
-def peticion= new Peticion()
+class PeticionDet {
+    def PD_IDDETALLE
+    def PD_IDPETICION
+    def PD_INTERFACE
+    def PD_PROCESO
+    def PD_SOURCE
+    def PD_DESTINO
+    def PD_ESTADOENVIO
+    def PD_MESSAGEID
+    def PD_CORRELATIONID
+    def PD_CODIGOERROR
+    def PD_MENSAJEERROR
+    def PD_USER
+    def PD_FECHACREACION
+    def PD_FECHAMODIFICACION
+    def PD_MENSAJEXML
+    String toString() { "PeticionDet[PD_IDDETALLE=$PD_IDDETALLE,PD_IDPETICION=$PD_IDPETICION,PD_INTERFACE=$PD_INTERFACE]" }
+}
 
+ObservableList data  = []
+/*
+ [
+        [PD_IDDETALLE:"",
+         PD_IDPETICION:"",
+         PD_INTERFACE:"",
+         PD_PROCESO:"",
+         PD_SOURCE:"",
+         PD_DESTINO:"",
+         PD_ESTADOENVIO:"",
+         PD_MESSAGEID:"",
+         PD_CORRELATIONID:"",
+         PD_CODIGOERROR:"",
+         PD_MENSAJEERROR:"",
+         PD_USER:"",
+         PD_FECHACREACION:"",
+         PD_FECHAMODIFICACION:"",
+         PD_MENSAJEXML:""],
+        [PD_IDDETALLE:"",
+         PD_IDPETICION:"",
+         PD_INTERFACE:"",
+         PD_PROCESO:"",
+         PD_SOURCE:"",
+         PD_DESTINO:"",
+         PD_ESTADOENVIO:"",
+         PD_MESSAGEID:"",
+         PD_CORRELATIONID:"",
+         PD_CODIGOERROR:"",
+         PD_MENSAJEERROR:"",
+         PD_USER:"",
+         PD_FECHACREACION:"",
+         PD_FECHAMODIFICACION:"",
+         PD_MENSAJEXML:""]
+         ]
+*/
+
+
+def peticion= new Peticion()
+def peticionDet= new PeticionDet()
 
 DbUtilMQM.bootStrap()
 def peticiones = DbUtilMQM.sql.dataSet('PS_PETICION')
+def peticionesDet = DbUtilMQM.sql.dataSet('PS_PETICIONDET')
+
 
 swing = new SwingBuilder()
-frame = swing.frame(title:'Demo',size:[1000,800]) {
+frame = swing.frame(title:'Demo',size:[1000,900]) {
     panel(id: 'principal', layout: new BorderLayout()) {
         panel(constraints: BorderLayout.WEST, border: compoundBorder([emptyBorder(10), titledBorder('Menu')])) {
             tree(createMenuTree()).getSelectionModel().addTreeSelectionListener({ e ->
@@ -76,64 +139,61 @@ frame = swing.frame(title:'Demo',size:[1000,800]) {
                                     }
                                     td {
                                         button text: 'enviar', actionPerformed: {
-                                            peticion.properties.each { key,value->
-                                                if( !(key in ['class','propertyChangeListeners']) ) peticion[key]=null
+                                            peticion.properties.each { key, value ->
+                                                if (!(key in ['class', 'propertyChangeListeners'])) peticion[key] = null
                                             }
+                                            data.clear()
                                             def result = peticiones.rows().findAll {
                                                 it.PT_NUMPETICION == numPeticionField.text.toInteger()
                                             }
-                                            if (result.size() == 1){
-                                                aux=result[0]
-                                                Peticion.declaredFields.collect{
-                                                    if( it.name.substring(0,2)=='PT' ) peticion[it.name]=aux[it.name]
+                                            if (result.size() == 1) {
+                                                aux = result[0]
+                                                Peticion.declaredFields.collect {
+                                                    if (it.name.substring(0, 2) == 'PT') peticion[it.name] = aux[it.name]
                                                 }
-                                                mensajelbl.text='   '
-                                            } else
-                                            {
-                                                mensajelbl.text='No existe petición '
-
+                                                mensajelbl.text = '   '
+                                                def resultDet = peticionesDet.rows().findAll{
+                                                    it.PD_IDPETICION == peticion["PT_IDPETICION"]
+                                                }.sort{it.PD_FECHACREACION}
+                                                data.addAll(resultDet)
+                                                mensajelbl.text = '   '
+                                            } else {
+                                                mensajelbl.text = 'No existe petición '
                                             }
                                         }
                                     }
                                     td {
-                                        label  text: '                                               '
+                                        label text: '                                               '
                                     }
                                 }
                                 tr {
                                     td {
-                                        label id:'mensajelbl', text: '   '
+                                        label(id: 'mensajelbl', text: '   ').setForeground(Color.RED)
                                     }
                                 }
                             }
                         }
                         panel(constraints: BorderLayout.CENTER, border: compoundBorder([emptyBorder(10), titledBorder('Informacion de la peticion:')])) {
-                           tableLayout {
-                               Peticion.declaredFields.collect{
-                                   aux=it.name
-                                   if( it.name.substring(0,2)=='PT' ) {
-                                       tr {
-                                           td {
-                                               label aux                                           }
-                                           td {
-                                               textField(text: bind(source: peticion, sourceProperty: aux), columns: 20)
-                                           }
-                                       }
-                                   }
-                               }
-
-                               }
+                            gridLayout(cols: 2, rows: 12)
+                            Peticion.declaredFields.collect {
+                                aux = it.name
+                                if (it.name.substring(0, 2) == 'PT') {
+                                    label aux + '   :  ', horizontalAlignment: JLabel.RIGHT
+                                    label text: bind(source: peticion, sourceProperty: aux), horizontalAlignment: JLabel.LEFT, font: fontlbl
+                                }
+                            }
                         }
-                        panel(constraints: BorderLayout.SOUTH, border: compoundBorder([emptyBorder(10), titledBorder('Detalle Transaccion:')])) {
-                            /*
+                        scrollPane (constraints: BorderLayout.SOUTH, border: compoundBorder([emptyBorder(10), titledBorder('Detalle Transaccion:')])) {
                             table(id: 'tabla') {
                                 tableModel(id: 'model', list: data) {
-                                    propertyColumn(header: 'Name', propertyName: 'name')
-                                    propertyColumn(header: 'Color', propertyName: 'color',)
+                                    propertyColumn(header: 'PD_INTERFACE', propertyName: 'PD_INTERFACE', editable: false)
+                                    propertyColumn(header: 'PD_PROCESO', propertyName: 'PD_PROCESO', editable: false)
+                                    propertyColumn(header: 'PD_CODIGOERROR', propertyName: 'PD_CODIGOERROR', editable: false)
+                                    propertyColumn(header: 'PD_MENSAJEERROR', propertyName: 'PD_MENSAJEERROR', editable: false)
                                 }
-                                data.addPropertyChangeListener({ e -> model.fireTableDataChanged() })
                             }
-                                                         */
                         }
+                        data.addPropertyChangeListener({ e -> model.fireTableDataChanged() })
                     }
             panelServicios =
                     panel() {
@@ -145,6 +205,7 @@ frame = swing.frame(title:'Demo',size:[1000,800]) {
 }
 
 //frame.pack()
+data.clear()
 panelPeticiones.visible = false
 panelServicios.visible = false
 menu['Seguimiento Num Peticion']=panelPeticiones
