@@ -64,50 +64,38 @@ class PeticionDet {
     String toString() { "PeticionDet[PD_IDDETALLE=$PD_IDDETALLE,PD_IDPETICION=$PD_IDPETICION,PD_INTERFACE=$PD_INTERFACE]" }
 }
 
+@Bindable
+class Servicio {
+    def SE_IDSERVICIO
+    def SE_IDCLIENTE
+    def SE_NUMSERVICIO
+    def SE_NUMTELEFONO
+    def SE_CODIGOSERVICIO
+    def SE_ZONAATENDIMIENTO
+    def SE_CANTIDADIP
+    def SE_ESTADOSERVICIO
+    def SE_USERNAME
+    def SE_USER
+    def SE_FECHACREACION
+    def SE_FECHAMODIFICACION
+    String toString() { "Servicio[SE_IDSERVICIO=$SE_IDSERVICIO,SE_NUMSERVICIO=$SE_NUMSERVICIO,SE_NUMTELEFONO=$SE_NUMTELEFONO]" }
+}
+
+
 ObservableList data  = []
-/*
- [
-        [PD_IDDETALLE:"",
-         PD_IDPETICION:"",
-         PD_INTERFACE:"",
-         PD_PROCESO:"",
-         PD_SOURCE:"",
-         PD_DESTINO:"",
-         PD_ESTADOENVIO:"",
-         PD_MESSAGEID:"",
-         PD_CORRELATIONID:"",
-         PD_CODIGOERROR:"",
-         PD_MENSAJEERROR:"",
-         PD_USER:"",
-         PD_FECHACREACION:"",
-         PD_FECHAMODIFICACION:"",
-         PD_MENSAJEXML:""],
-        [PD_IDDETALLE:"",
-         PD_IDPETICION:"",
-         PD_INTERFACE:"",
-         PD_PROCESO:"",
-         PD_SOURCE:"",
-         PD_DESTINO:"",
-         PD_ESTADOENVIO:"",
-         PD_MESSAGEID:"",
-         PD_CORRELATIONID:"",
-         PD_CODIGOERROR:"",
-         PD_MENSAJEERROR:"",
-         PD_USER:"",
-         PD_FECHACREACION:"",
-         PD_FECHAMODIFICACION:"",
-         PD_MENSAJEXML:""]
-         ]
-*/
+ObservableList dataPetServ =[]
+
 
 
 def peticion= new Peticion()
 def peticionDet= new PeticionDet()
+def servicio= new Servicio()
 
 DbUtilMQM.bootStrap()
 def peticiones = DbUtilMQM.sql.dataSet('PS_PETICION')
 def peticionesDet = DbUtilMQM.sql.dataSet('PS_PETICIONDET')
-
+def servicios = DbUtilMQM.sql.dataSet('PS_SERVICIO')
+def parametrosDet = DbUtilMQM.sql.dataSet('PS_PARAMETROSDET')
 
 swing = new SwingBuilder()
 frame = swing.frame(title:'Demo',size:[1000,900]) {
@@ -151,14 +139,37 @@ frame = swing.frame(title:'Demo',size:[1000,900]) {
                                                 Peticion.declaredFields.collect {
                                                     if (it.name.substring(0, 2) == 'PT') peticion[it.name] = aux[it.name]
                                                 }
-                                                mensajelbl.text = '   '
+
+                                                def numServicio = servicios.rows().findAll{
+                                                    peticion.PT_IDSERVICIO=it.SE_IDSERVICIO
+                                                }
+                                                peticion.PT_IDSERVICIO = numServicio[0].SE_NUMSERVICIO
+
+                                                def tipoPeticion = parametrosDet.rows().findAll{itParDet->
+                                                    if (itParDet.PD_IDPARAMETRO==4 && peticion.PT_TIPOPETICION == itParDet.PD_IDDETALLE){true} else {false}
+                                                }
+                                                peticion.PT_TIPOPETICION=tipoPeticion[0]?.PD_DESCRIPCION
+
+                                                def estadoPeticion = parametrosDet.rows().findAll{itParDet->
+                                                    if (itParDet.PD_IDPARAMETRO==3 && peticion.PT_ESTADOPETICION == itParDet.PD_IDDETALLE){true} else {false}
+                                                }
+                                                peticion.PT_ESTADOPETICION=estadoPeticion[0]?.PD_DESCRIPCION
+
+                                                def estadoPeticionAtiempo = parametrosDet.rows().findAll{itParDet->
+                                                    if (itParDet.PD_IDPARAMETRO==5 && peticion.PT_ESTADOATIEMPO == itParDet.PD_IDDETALLE){true} else {false}
+                                                }
+                                                peticion.PT_ESTADOATIEMPO=estadoPeticionAtiempo[0]?.PD_DESCRIPCION
+
+                                                peticion.PT_CODIGOERROR=peticion.PT_CODIGOERROR.padRight(4, '0')
+
+                                                mensajePetlbl.text = '   '
                                                 def resultDet = peticionesDet.rows().findAll{
                                                     it.PD_IDPETICION == peticion["PT_IDPETICION"]
                                                 }.sort{it.PD_FECHACREACION}
                                                 data.addAll(resultDet)
-                                                mensajelbl.text = '   '
+                                                mensajePetlbl.text = '   '
                                             } else {
-                                                mensajelbl.text = 'No existe petición '
+                                                mensajePetlbl.text = 'No existe petición '
                                             }
                                         }
                                     }
@@ -168,7 +179,7 @@ frame = swing.frame(title:'Demo',size:[1000,900]) {
                                 }
                                 tr {
                                     td {
-                                        label(id: 'mensajelbl', text: '   ').setForeground(Color.RED)
+                                        label(id: 'mensajePetlbl', text: '   ').setForeground(Color.RED)
                                     }
                                 }
                             }
@@ -185,7 +196,7 @@ frame = swing.frame(title:'Demo',size:[1000,900]) {
                         }
                         scrollPane (constraints: BorderLayout.SOUTH, border: compoundBorder([emptyBorder(10), titledBorder('Detalle Transaccion:')])) {
                             table(id: 'tabla') {
-                                tableModel(id: 'model', list: data) {
+                                tableModel(id: 'modelPet', list: data) {
                                     propertyColumn(header: 'PD_INTERFACE', propertyName: 'PD_INTERFACE', editable: false)
                                     propertyColumn(header: 'PD_PROCESO', propertyName: 'PD_PROCESO', editable: false)
                                     propertyColumn(header: 'PD_CODIGOERROR', propertyName: 'PD_CODIGOERROR', editable: false)
@@ -193,11 +204,103 @@ frame = swing.frame(title:'Demo',size:[1000,900]) {
                                 }
                             }
                         }
-                        data.addPropertyChangeListener({ e -> model.fireTableDataChanged() })
+                        data.addPropertyChangeListener({ e -> modelPet.fireTableDataChanged() })
                     }
             panelServicios =
-                    panel() {
-                        label("Panel Servicioes")
+                    panel(layout: new BorderLayout()) {
+                        panel(constraints: BorderLayout.NORTH, border: compoundBorder([emptyBorder(10), titledBorder('Consulta:')])) {
+                            tableLayout {
+                                tr {
+                                    td {
+                                        label 'Numero de Teléfono:'
+                                    }
+                                    td {
+                                        textField id: 'numServicioField', columns: 20
+                                    }
+                                    td {
+                                        button text: 'enviar', actionPerformed: {
+                                            Servicio.declaredFields.collect {
+                                                if (it.name.substring(0, 2) == 'SE') servicio[it.name] = null
+                                            }
+                                            dataPetServ.clear()
+                                            def result = servicios.rows().findAll {
+                                                it.SE_NUMSERVICIO == numServicioField.text
+                                            }
+                                            if (result.size() == 1) {
+                                                aux = result[0]
+                                                Servicio.declaredFields.collect {
+                                                    if (it.name.substring(0, 2) == 'SE') servicio[it.name] = aux[it.name]
+                                                }
+                                                def estadoServicio = parametrosDet.rows().findAll{
+                                                    if (it.PD_IDPARAMETRO==1 && servicio.SE_ESTADOSERVICIO == it.PD_IDDETALLE){true} else {false}
+                                                }
+                                                servicio.SE_ESTADOSERVICIO = estadoServicio[0].PD_DESCRIPCION
+                                                mensajelbl.text = '   '
+                                                def resultPet = peticiones.rows().findAll{
+                                                    it.PT_IDSERVICIO == servicio["SE_IDSERVICIO"]
+                                                }.sort{it.PT_FECHACREACION}
+
+                                                resultPet.each{ itPet->
+                                                    def tipoPeticion = parametrosDet.rows().findAll{itParDet->
+                                                        if (itParDet.PD_IDPARAMETRO==4 && itPet.PT_TIPOPETICION == itParDet.PD_IDDETALLE){true} else {false}
+                                                    }
+                                                    itPet.PT_TIPOPETICION=tipoPeticion[0]?.PD_DESCRIPCION
+
+                                                    def estadoPeticion = parametrosDet.rows().findAll{itParDet->
+                                                        if (itParDet.PD_IDPARAMETRO==3 && itPet.PT_ESTADOPETICION == itParDet.PD_IDDETALLE){true} else {false}
+                                                    }
+                                                    itPet.PT_ESTADOPETICION=estadoPeticion[0]?.PD_DESCRIPCION
+
+
+                                                    def estadoPeticionAtiempo = parametrosDet.rows().findAll{itParDet->
+                                                        if (itParDet.PD_IDPARAMETRO==5 && itPet.PT_ESTADOATIEMPO == itParDet.PD_IDDETALLE){true} else {false}
+                                                    }
+                                                    itPet.PT_ESTADOATIEMPO=estadoPeticionAtiempo[0]?.PD_DESCRIPCION
+                                                    itPet.PT_CODIGOERROR=itPet.PT_CODIGOERROR.padRight(4, '0')
+                                                }
+                                                dataPetServ.addAll(resultPet)
+                                                mensajePetlbl.text = '   '
+                                            } else {
+                                                mensajePetlbl.text = 'No existe el servicio '
+                                            }
+                                        }
+                                    }
+                                    td {
+                                        label text: '                                               '
+                                    }
+                                }
+                                tr {
+                                    td {
+                                        label(id: 'mensajelbl', text: '   ').setForeground(Color.RED)
+                                    }
+                                }
+                            }
+                        }
+                        panel(constraints: BorderLayout.CENTER, border: compoundBorder([emptyBorder(10), titledBorder('Informacion del servicio:')])) {
+                            gridLayout(cols: 2, rows: 12)
+                            Servicio.declaredFields.collect {
+                                aux = it.name
+                                if (it.name.substring(0, 2) == 'SE') {
+                                    label aux + '   :  ', horizontalAlignment: JLabel.RIGHT
+                                    label text: bind(source: servicio, sourceProperty: aux), horizontalAlignment: JLabel.LEFT, font: fontlbl
+                                }
+                            }
+                        }
+                        scrollPane (constraints: BorderLayout.SOUTH, border: compoundBorder([emptyBorder(10), titledBorder('Detalle Transaccion:')])) {
+                            table(id: 'tabla') {
+                                tableModel(id: 'modelPetServ', list: dataPetServ) {
+                                    propertyColumn(header: 'Petición', propertyName: 'PT_NUMPETICION', editable: false)
+                                    propertyColumn(header: 'Tipo Pet', propertyName: 'PT_TIPOPETICION', editable: false)
+                                    propertyColumn(header: 'Estado', propertyName: 'PT_ESTADOPETICION', editable: false)
+                                    propertyColumn(header: 'Est@Tiempo', propertyName: 'PT_ESTADOATIEMPO', editable: false)
+                                    propertyColumn(header: 'Error', propertyName: 'PT_CODIGOERROR', editable: false)
+                                    propertyColumn(header: 'Mensaje', propertyName: 'PT_MENSAJEERROR', editable: false)
+                                    propertyColumn(header: 'Creación', propertyName: 'PT_FECHACREACION', editable: false)
+                                    propertyColumn(header: 'Modificación', propertyName: 'PT_FECHAMODIFICACION', editable: false)
+                                }
+                            }
+                        }
+                        dataPetServ.addPropertyChangeListener({ e -> modelPetServ.fireTableDataChanged() })
                     }
         }
     }
