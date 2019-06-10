@@ -1,5 +1,5 @@
-- Probar si actualizamos la bbdd , consultamos a posteriori y obtenemos la información actualizadas
 - Refactorización para sacar a otro fichero logica de ventanas y de la BBDD
+- Probar si actualizamos la bbdd , consultamos a posteriori y obtenemos la información actualizadas
 - Pulsar click sobre un campo y acceder a la ventana apropiada. Si  pulsamos petición acceder a la ventana de Petición.
 - configurar via sql los parametros de conexión
 - Se pueda traducir la descripción PT_IDPETICION por una más entendible.
