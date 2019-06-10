@@ -1,5 +1,7 @@
 package main.groovy.app
 
+import main.groovy.domain.PeticionDet
+
 import java.awt.BorderLayout
 import java.awt.Color
 import java.awt.Font
@@ -9,6 +11,7 @@ import javax.swing.*
 import main.groovy.util.DbUtilMQM
 import main.groovy.domain.Peticion
 import main.groovy.domain.Servicio
+import main.groovy.domain.ParametrosDet
 import main.groovy.util.Menu
 
 
@@ -16,7 +19,7 @@ def panelPeticiones,panelServicios
 def menu = [:]
 Font fontlbl = new Font("Courier", Font.PLAIN, 13)
 
-ObservableList data  = []
+ObservableList dataPeticionDet  = []
 ObservableList dataPetServ =[]
 
 def peticion= new Peticion()
@@ -48,46 +51,17 @@ frame = swing.frame(title:'Demo',size:[1000,900]) {
                                     }
                                     td {
                                         button text: 'enviar', actionPerformed: {
-                                            peticion.properties.each { key, value ->
-                                                if (!(key in ['class', 'propertyChangeListeners'])) peticion[key] = null
-                                            }
-                                            data.clear()
-                                            def result = peticiones.rows().findAll {
-                                                it.PT_NUMPETICION == numPeticionField.text.toInteger()
-                                            }
-                                            if (result.size() == 1) {
-                                                aux = result[0]
-                                                Peticion.declaredFields.collect {
-                                                    if (it.name.substring(0, 2) == 'PT') peticion[it.name] = aux[it.name]
-                                                }
-
-                                                def numServicio = servicios.rows().findAll{
-                                                    peticion.PT_IDSERVICIO=it.SE_IDSERVICIO
-                                                }
-                                                peticion.PT_IDSERVICIO = numServicio[0].SE_NUMSERVICIO
-
-                                                def tipoPeticion = parametrosDet.rows().findAll{itParDet->
-                                                    if (itParDet.PD_IDPARAMETRO==4 && peticion.PT_TIPOPETICION == itParDet.PD_IDDETALLE){true} else {false}
-                                                }
-                                                peticion.PT_TIPOPETICION=tipoPeticion[0]?.PD_DESCRIPCION
-
-                                                def estadoPeticion = parametrosDet.rows().findAll{itParDet->
-                                                    if (itParDet.PD_IDPARAMETRO==3 && peticion.PT_ESTADOPETICION == itParDet.PD_IDDETALLE){true} else {false}
-                                                }
-                                                peticion.PT_ESTADOPETICION=estadoPeticion[0]?.PD_DESCRIPCION
-
-                                                def estadoPeticionAtiempo = parametrosDet.rows().findAll{itParDet->
-                                                    if (itParDet.PD_IDPARAMETRO==5 && peticion.PT_ESTADOATIEMPO == itParDet.PD_IDDETALLE){true} else {false}
-                                                }
-                                                peticion.PT_ESTADOATIEMPO=estadoPeticionAtiempo[0]?.PD_DESCRIPCION
-
+                                            Peticion.clearValores(peticion)
+                                            dataPeticionDet.clear()
+                                            def auxPeticion=Peticion.getPeticion(numPeticionField.text.toInteger())
+                                            if (auxPeticion != null) {
+                                                Peticion.setValores(peticion,auxPeticion)
+                                                peticion.PT_IDSERVICIO = Servicio.getServicio(peticion.PT_IDSERVICIO).SE_NUMSERVICIO
+                                                peticion.PT_TIPOPETICION=ParametrosDet.getTipoPeticion(peticion.PT_TIPOPETICION)
+                                                peticion.PT_ESTADOPETICION=ParametrosDet.getEstadoPeticion(peticion.PT_ESTADOPETICION)
+                                                peticion.PT_ESTADOATIEMPO=ParametrosDet.getEstadoPeticionAtiempo(peticion.PT_ESTADOATIEMPO)
                                                 peticion.PT_CODIGOERROR=peticion.PT_CODIGOERROR.padRight(4, '0')
-
-                                                mensajePetlbl.text = '   '
-                                                def resultDet = peticionesDet.rows().findAll{
-                                                    it.PD_IDPETICION == peticion["PT_IDPETICION"]
-                                                }.sort{it.PD_FECHACREACION}
-                                                data.addAll(resultDet)
+                                                dataPeticionDet.addAll(PeticionDet.getPeticionDet(peticion.PT_IDPETICION))
                                                 mensajePetlbl.text = '   '
                                             } else {
                                                 mensajePetlbl.text = 'No existe petición '
@@ -117,7 +91,7 @@ frame = swing.frame(title:'Demo',size:[1000,900]) {
                         }
                         scrollPane (constraints: BorderLayout.SOUTH, border: compoundBorder([emptyBorder(10), titledBorder('Detalle Transaccion:')])) {
                             table(id: 'tabla') {
-                                tableModel(id: 'modelPet', list: data) {
+                                tableModel(id: 'modelPet', list: dataPeticionDet) {
                                     propertyColumn(header: 'PD_INTERFACE', propertyName: 'PD_INTERFACE', editable: false)
                                     propertyColumn(header: 'PD_PROCESO', propertyName: 'PD_PROCESO', editable: false)
                                     propertyColumn(header: 'PD_CODIGOERROR', propertyName: 'PD_CODIGOERROR', editable: false)
@@ -125,7 +99,7 @@ frame = swing.frame(title:'Demo',size:[1000,900]) {
                                 }
                             }
                         }
-                        data.addPropertyChangeListener({ e -> modelPet.fireTableDataChanged() })
+                        dataPeticionDet.addPropertyChangeListener({ e -> modelPet.fireTableDataChanged() })
                     }
             panelServicios =
                     panel(layout: new BorderLayout()) {
@@ -229,7 +203,7 @@ frame = swing.frame(title:'Demo',size:[1000,900]) {
 }
 
 //frame.pack()
-data.clear()
+dataPeticionDet.clear()
 panelPeticiones.visible = false
 panelServicios.visible = false
 menu['Seguimiento Num Peticion']=panelPeticiones

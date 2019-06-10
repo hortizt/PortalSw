@@ -1,6 +1,7 @@
 package main.groovy.domain
 
 import groovy.beans.Bindable
+import main.groovy.util.DbUtilMQM
 
 
 @Bindable
@@ -18,4 +19,10 @@ class Servicio {
     def SE_FECHACREACION
     def SE_FECHAMODIFICACION
     String toString() { "Servicio[SE_IDSERVICIO=$SE_IDSERVICIO,SE_NUMSERVICIO=$SE_NUMSERVICIO,SE_NUMTELEFONO=$SE_NUMTELEFONO]" }
+    static Servicio getServicio(idServicio){
+        def servicio = DbUtilMQM.sql.dataSet('PS_SERVICIO').rows().findAll{
+            idServicio=it.SE_IDSERVICIO
+        }
+        return servicio[0]
+    }
 }

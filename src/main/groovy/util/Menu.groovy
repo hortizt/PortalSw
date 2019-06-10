@@ -36,8 +36,4 @@ class Menu {
         return projectTree
     }
 
-    static ButtonPeticionEnviar={
-
-    }
-
 }
