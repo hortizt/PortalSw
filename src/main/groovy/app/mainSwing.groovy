@@ -9,6 +9,8 @@ import javax.swing.*
 import main.groovy.util.DbUtilMQM
 import main.groovy.domain.Peticion
 import main.groovy.domain.Servicio
+import main.groovy.util.Menu
+
 
 def panelPeticiones,panelServicios
 def menu = [:]
@@ -30,17 +32,7 @@ swing = new SwingBuilder()
 frame = swing.frame(title:'Demo',size:[1000,900]) {
     panel(id: 'principal', layout: new BorderLayout()) {
         panel(constraints: BorderLayout.WEST, border: compoundBorder([emptyBorder(10), titledBorder('Menu')])) {
-            tree(createMenuTree()).getSelectionModel().addTreeSelectionListener({ e ->
-                def seleccion1 = (e.source.selection).toString()
-                if ((seleccion1.replace('[[', '').replace(']]', '').split(',')).size() == 3) {
-                    sele2 = seleccion1.replace('[[', '').replace(']]', '').split(',')[2]
-                    println sele2
-                    menu.each { item -> item.value.visible = false }
-                    menu[sele2.trim()].visible = true
-                } else {
-                    println "Nada"
-                }
-            })
+            tree(Menu.createMenuTree()).getSelectionModel().addTreeSelectionListener({e->Menu.accionSeleccionMenu(e,menu)})
         }
         panel(id: 'paneles', border: compoundBorder([emptyBorder(10), titledBorder('Informacion')])) {
             panelPeticiones =
@@ -248,20 +240,3 @@ menu['Peticiones por servicio']=panelServicios
 frame.visible = true
 
 
-JTree createMenuTree() {
-    def topNode = new DefaultMutableTreeNode('Menu')
-    def segServ = new DefaultMutableTreeNode('Seguimiento Servicios               ')
-
-    segServ.add(new DefaultMutableTreeNode('Seguimiento Num Peticion'))
-    segServ.add(new DefaultMutableTreeNode('Peticiones por servicio'))
-    segServ.add(new DefaultMutableTreeNode('Servicios por cliente'))
-    segServ.add(new DefaultMutableTreeNode('Datos Banda Ancha'))
-
-    def maniobras = new DefaultMutableTreeNode('Maniobras')
-    maniobras.add(new DefaultMutableTreeNode('Maniobras 1'))
-
-    topNode.add(segServ)
-    topNode.add(maniobras)
-    projectTree = new JTree(topNode)
-    return projectTree
-}
