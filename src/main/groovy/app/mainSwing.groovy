@@ -1,94 +1,23 @@
 package main.groovy.app
 
-import main.groovy.util.DbUtilMQM
-import main.groovy.util.Peticiones
-
 import java.awt.BorderLayout
-import javax.swing.BorderFactory
 import java.awt.Color
-import java.awt.FlowLayout
 import java.awt.Font
-import java.awt.GridLayout
 import groovy.swing.SwingBuilder
 import javax.swing.tree.DefaultMutableTreeNode
 import javax.swing.*
-import javax.swing.event.TreeSelectionEvent;
-import javax.swing.event.TreeSelectionListener;
-import java.beans.PropertyChangeListener
-import groovy.beans.Bindable
+import main.groovy.util.DbUtilMQM
+import main.groovy.domain.Peticion
+import main.groovy.domain.Servicio
 
-def message
 def panelPeticiones,panelServicios
-
 def menu = [:]
-
-
-ObservableList people = [ [name:"Mary", age:18], [name:"Tom", age:25] ]
-def numPeticion
 Font fontlbl = new Font("Courier", Font.PLAIN, 13)
-
-
-@Bindable
-class Peticion {
-    def PT_IDPETICION
-    def PT_IDSERVICIO
-    def PT_NUMPETICION
-    def PT_TIPOPETICION
-    def PT_ESTADOPETICION
-    def PT_ESTADOATIEMPO
-    def PT_CODIGOERROR
-    def PT_MENSAJEERROR
-    def PT_USER
-    def PT_DESCRIPCION
-    def PT_FECHACREACION
-    def PT_FECHAMODIFICACION
-    String toString() { "Peticion[idpeticion=$PT_IDPETICION,idservicio=$PT_IDSERVICIO,numpeticion=$PT_NUMPETICION]" }
-}
-
-class PeticionDet {
-    def PD_IDDETALLE
-    def PD_IDPETICION
-    def PD_INTERFACE
-    def PD_PROCESO
-    def PD_SOURCE
-    def PD_DESTINO
-    def PD_ESTADOENVIO
-    def PD_MESSAGEID
-    def PD_CORRELATIONID
-    def PD_CODIGOERROR
-    def PD_MENSAJEERROR
-    def PD_USER
-    def PD_FECHACREACION
-    def PD_FECHAMODIFICACION
-    def PD_MENSAJEXML
-    String toString() { "PeticionDet[PD_IDDETALLE=$PD_IDDETALLE,PD_IDPETICION=$PD_IDPETICION,PD_INTERFACE=$PD_INTERFACE]" }
-}
-
-@Bindable
-class Servicio {
-    def SE_IDSERVICIO
-    def SE_IDCLIENTE
-    def SE_NUMSERVICIO
-    def SE_NUMTELEFONO
-    def SE_CODIGOSERVICIO
-    def SE_ZONAATENDIMIENTO
-    def SE_CANTIDADIP
-    def SE_ESTADOSERVICIO
-    def SE_USERNAME
-    def SE_USER
-    def SE_FECHACREACION
-    def SE_FECHAMODIFICACION
-    String toString() { "Servicio[SE_IDSERVICIO=$SE_IDSERVICIO,SE_NUMSERVICIO=$SE_NUMSERVICIO,SE_NUMTELEFONO=$SE_NUMTELEFONO]" }
-}
-
 
 ObservableList data  = []
 ObservableList dataPetServ =[]
 
-
-
 def peticion= new Peticion()
-def peticionDet= new PeticionDet()
 def servicio= new Servicio()
 
 DbUtilMQM.bootStrap()
