@@ -1,6 +1,6 @@
-package main.groovy.app
+package main.groovy.app.MainSwing
+import main.groovy.app.MainSwing
 
-import  main.java.app.*
-
-def m= new mainFrame()
-m.run()
+def swing=MainSwing.getMainSwing()
+assert swing
+swing.frame.visible=true

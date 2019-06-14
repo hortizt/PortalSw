@@ -1,7 +1,10 @@
+
+- Sacar la inicializacion de la base de datos fuera
+- Servicio : getServicioIdServicio y getServicioNumServicio se pueden unificar
 - Refactorización para sacar a otro fichero logica de ventanas y de la BBDD
 - Probar si actualizamos la bbdd , consultamos a posteriori y obtenemos la información actualizadas
 - Pulsar click sobre un campo y acceder a la ventana apropiada. Si  pulsamos petición acceder a la ventana de Petición.
-- configurar via sql los parametros de conexión
+- configurar via XML los parametros de conexión mediante un fichero config.xml
 - Se pueda traducir la descripción PT_IDPETICION por una más entendible.
--test para el GUI
+- test para el GUI
 - mejorar la funcion PeticionDet.toString

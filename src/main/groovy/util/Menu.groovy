@@ -1,5 +1,10 @@
 package main.groovy.util
 
+import main.groovy.domain.ParametrosDet
+import main.groovy.domain.Peticion
+import main.groovy.domain.PeticionDet
+import main.groovy.domain.Servicio
+
 import javax.swing.JTree
 import javax.swing.tree.DefaultMutableTreeNode
 
@@ -35,5 +40,25 @@ class Menu {
         def projectTree = new JTree(topNode)
         return projectTree
     }
+
+    static String btnEnviarPeticionAccion(Integer numPeticion, Peticion peticion, ObservableList dataPeticionDet)
+    {
+        Peticion.clearValores(peticion)
+        dataPeticionDet.clear()
+        def auxPeticion = Peticion.getPeticion(numPeticion)
+        if (auxPeticion != null) {
+            Peticion.setValores(peticion, auxPeticion)
+            peticion.PT_IDSERVICIO = Servicio.getServicioIdServicio(peticion.PT_IDSERVICIO).SE_NUMSERVICIO
+            peticion.PT_TIPOPETICION = ParametrosDet.getTipoPeticion(peticion.PT_TIPOPETICION)
+            peticion.PT_ESTADOPETICION = ParametrosDet.getEstadoPeticion(peticion.PT_ESTADOPETICION)
+            peticion.PT_ESTADOATIEMPO = ParametrosDet.getEstadoPeticionAtiempo(peticion.PT_ESTADOATIEMPO)
+            peticion.PT_CODIGOERROR = peticion.PT_CODIGOERROR.padRight(4, '0')
+            dataPeticionDet.addAll(PeticionDet.getPeticionDet(peticion.PT_IDPETICION))
+            return "OK"
+        } else {
+            return "NOOK"
+        }
+    }
+
 
 }
