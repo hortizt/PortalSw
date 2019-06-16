@@ -20,7 +20,7 @@ class Peticion {
     def PT_FECHAMODIFICACION
     String toString() { "Peticion[idpeticion=$PT_IDPETICION,idservicio=$PT_IDSERVICIO,numpeticion=$PT_NUMPETICION]" }
 
-    static Peticion getPeticion(numPeticion){
+    static Peticion getPeticionbyNumPeticion(numPeticion){
         def result = DbUtilMQM.sql.dataSet('PS_PETICION').rows().findAll {
             it.PT_NUMPETICION == numPeticion
         }
@@ -40,6 +40,13 @@ class Peticion {
         Peticion.declaredFields.collect {
             if (it.name.substring(0, 2) == 'PT') peticion[it.name] = null
         }
+    }
+
+    static Peticion getPeticionbyNumServicio(numServicio) {
+        def resultPet = DbUtilMQM.sql.dataSet('PS_PETICION').rows().findAll {
+            it.PT_IDSERVICIO == numServicio
+        }.sort { it.PT_FECHACREACION }
+        return resultPet
     }
 
 }

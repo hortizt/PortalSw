@@ -25,4 +25,16 @@ class ParametrosDet {
         }
         return estadoPeticionAtiempo[0]?.PD_DESCRIPCION
     }
+
+    static String getEstadoServicio(id){
+
+        def estadoServicio = DbUtilMQM.sql.dataSet('PS_PARAMETROSDET').rows().findAll {
+            if (it.PD_IDPARAMETRO == 1 && id == it.PD_IDDETALLE) {
+                true
+            } else {
+                false
+            }
+        }
+        return estadoServicio[0].PD_DESCRIPCION
+    }
 }

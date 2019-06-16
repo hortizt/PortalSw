@@ -7,8 +7,10 @@ import java.awt.Font
 import groovy.swing.SwingBuilder
 import javax.swing.*
 import main.groovy.util.DbUtilMQM
+import main.groovy.util.DbUtilInventario
 import main.groovy.domain.Peticion
 import main.groovy.domain.Servicio
+import main.groovy.domain.DatosBA
 import main.groovy.domain.ParametrosDet
 import main.groovy.util.Menu
 
@@ -19,7 +21,7 @@ class MainSwing {
     static SwingBuilder getMainSwing() {
 
 
-        def panelPeticiones, panelServicios
+        def panelPeticiones, panelServicios, panelDatosBA
         def menu = [:]
         Font fontlbl = new Font("Courier", Font.PLAIN, 13)
 
@@ -28,18 +30,12 @@ class MainSwing {
 
         def peticion = new Peticion()
         def servicio = new Servicio()
+        def datosBA = new DatosBA()
 
         DbUtilMQM.bootStrap()
-        def peticiones = DbUtilMQM.sql.dataSet('PS_PETICION')
-        def peticionesDet = DbUtilMQM.sql.dataSet('PS_PETICIONDET')
-        def servicios = DbUtilMQM.sql.dataSet('PS_SERVICIO')
-        def parametrosDet = DbUtilMQM.sql.dataSet('PS_PARAMETROSDET')
-
-
+        DbUtilInventario.bootStrap()
 
         def swing = new SwingBuilder()
-
-
         def frame = swing.frame(id:'frame', title: 'Demo', size: [1000, 900]) {
             panel(id: 'panelPrincipal', layout: new BorderLayout()) {
                 panel(id:'panelMenu',constraints: BorderLayout.WEST, border: compoundBorder([emptyBorder(10), titledBorder('Menu')])) {
@@ -64,9 +60,7 @@ class MainSwing {
                                             td { label text: '                                               ' }
                                         }
                                         tr {
-                                            td {
-                                                label(id: 'mensajePetlbl', text: '   ').setForeground(Color.RED)
-                                            }
+                                            td { label(id: 'mensajePetlbl', text: '   ').setForeground(Color.RED)   }
                                         }
                                     }
                                 }
@@ -97,80 +91,20 @@ class MainSwing {
                                 panel(constraints: BorderLayout.NORTH, border: compoundBorder([emptyBorder(10), titledBorder('Consulta:')])) {
                                     tableLayout {
                                         tr {
-                                            td {
-                                                label 'Numero de Teléfono:'
-                                            }
-                                            td {
-                                                textField id: 'numServicioField', columns: 20
-                                            }
-                                            td {
-                                                button text:'enviar', id:'btnEnviarServicio', actionPerformed: {
-                                                    Servicio.clearValores(servicio)
-                                                    dataPetServ.clear()
-                                                    def auxServicio=Servicio.getServicioNumServicio( numServicioField.text)
-                                                    if (auxServicio != null) {
-                                                        Servicio.setValores(servicio, auxServicio)
-                                                        Servicio.declaredFields.collect {
-                                                            if (it.name.substring(0, 2) == 'SE') servicio[it.name] = auxServicio[it.name]
-                                                        }
-                                                        def estadoServicio = parametrosDet.rows().findAll {
-                                                            if (it.PD_IDPARAMETRO == 1 && servicio.SE_ESTADOSERVICIO == it.PD_IDDETALLE) {
-                                                                true
-                                                            } else {
-                                                                false
-                                                            }
-                                                        }
-                                                        servicio.SE_ESTADOSERVICIO = estadoServicio[0].PD_DESCRIPCION
-                                                        mensajelbl.text = '   '
-                                                        def resultPet = peticiones.rows().findAll {
-                                                            it.PT_IDSERVICIO == servicio["SE_IDSERVICIO"]
-                                                        }.sort { it.PT_FECHACREACION }
-
-                                                        resultPet.each { itPet ->
-                                                            def tipoPeticion = parametrosDet.rows().findAll { itParDet ->
-                                                                if (itParDet.PD_IDPARAMETRO == 4 && itPet.PT_TIPOPETICION == itParDet.PD_IDDETALLE) {
-                                                                    true
-                                                                } else {
-                                                                    false
-                                                                }
-                                                            }
-                                                            itPet.PT_TIPOPETICION = tipoPeticion[0]?.PD_DESCRIPCION
-
-                                                            def estadoPeticion = parametrosDet.rows().findAll { itParDet ->
-                                                                if (itParDet.PD_IDPARAMETRO == 3 && itPet.PT_ESTADOPETICION == itParDet.PD_IDDETALLE) {
-                                                                    true
-                                                                } else {
-                                                                    false
-                                                                }
-                                                            }
-                                                            itPet.PT_ESTADOPETICION = estadoPeticion[0]?.PD_DESCRIPCION
-
-
-                                                            def estadoPeticionAtiempo = parametrosDet.rows().findAll { itParDet ->
-                                                                if (itParDet.PD_IDPARAMETRO == 5 && itPet.PT_ESTADOATIEMPO == itParDet.PD_IDDETALLE) {
-                                                                    true
-                                                                } else {
-                                                                    false
-                                                                }
-                                                            }
-                                                            itPet.PT_ESTADOATIEMPO = estadoPeticionAtiempo[0]?.PD_DESCRIPCION
-                                                            itPet.PT_CODIGOERROR = itPet.PT_CODIGOERROR.padRight(4, '0')
-                                                        }
-                                                        dataPetServ.addAll(resultPet)
+                                            td { label 'Numero de Teléfono:' }
+                                            td { textField id: 'numServicioField', columns: 20 }
+                                            td { button text:'enviar', id:'btnEnviarServicio', actionPerformed: {
+                                                    if(Menu.btnEnviarServicioAccion(numServicioField.text, servicio, dataPetServ)=="OK"){
                                                         mensajePetlbl.text = '   '
                                                     } else {
                                                         mensajePetlbl.text = 'No existe el servicio '
                                                     }
                                                 }
                                             }
-                                            td {
-                                                label text: '                                               '
-                                            }
+                                            td { label text: '                                               ' }
                                         }
                                         tr {
-                                            td {
-                                                label(id: 'mensajelbl', text: '   ').setForeground(Color.RED)
-                                            }
+                                            td { label(id: 'mensajelbl', text: '   ').setForeground(Color.RED)  }
                                         }
                                     }
                                 }
@@ -200,17 +134,49 @@ class MainSwing {
                                 }
                                 dataPetServ.addPropertyChangeListener({ e -> modelPetServ.fireTableDataChanged() })
                             }
+                    panelDatosBA =
+                            panel(id:'panelDatosBA',layout: new BorderLayout()) {
+                                panel(constraints: BorderLayout.NORTH, border: compoundBorder([emptyBorder(10), titledBorder('Consulta:')])) {
+                                    tableLayout {
+                                        tr {
+                                            td { label 'Valor Busqueda:' }
+                                            td { textField id: 'numValorBusquedaField', columns: 20 }
+                                            td { button text:'enviar', id:'btnEnviarDatosBA', actionPerformed: {
+                                                if(Menu.btnEnviarDatosBAAccion(numValorBusquedaField.text, datosBA)=="OK"){
+                                                    mensajeDatosBAlbl.text = '   '
+                                                } else {
+                                                    mensajeDatosBAlbl.text = 'No existe el servicio '
+                                                }
+                                            }
+                                            }
+                                            td { label text: '                                               ' }
+                                        }
+                                        tr {
+                                            td { label(id: 'mensajeDatosBAlbl', text: '   ').setForeground(Color.RED)  }
+                                        }
+                                    }
+                                }
+                                panel(constraints: BorderLayout.SOUTH, border: compoundBorder([emptyBorder(10), titledBorder('Informacion del servicio:')])) {
+                                    gridLayout(cols: 2, rows: 20)
+                                    DatosBA.declaredFields[0..19].collect {
+                                        aux = it.name
+                                        label aux + '   :  ', horizontalAlignment: JLabel.RIGHT
+                                        label id: aux, text: bind(source: datosBA, sourceProperty: aux), horizontalAlignment: JLabel.LEFT, font: fontlbl
+                                    }
+                                }
+                            }
                 }
             }
         }
 
         dataPeticionDet.clear()
+        dataPetServ.clear()
         panelPeticiones.visible = false
         panelServicios.visible = false
+        panelDatosBA.visible = false
         menu['Seguimiento Num Peticion'] = panelPeticiones
         menu['Peticiones por servicio'] = panelServicios
-
-        //frame.visible = true
+        menu['Datos Banda Ancha'] = panelDatosBA
         return swing
     }
 }

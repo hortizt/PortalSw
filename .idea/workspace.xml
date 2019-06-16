@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe6b9646-0501-44e1-8702-376deb35a6f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/app/MainSwing.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/groovy/app/mainTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/domain/DatosBA.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Doc/tareas" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/tareas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/app/main.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/app/main.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/domain/Servicio.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/domain/Servicio.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure3$_closure5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4$_closure7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2$_closure4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1$_closure2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing$_run_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/app/mainSwing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/Peticiones$_getPeticionesTable_closure1$_closure2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/Peticiones$_getPeticionesTable_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PortalSw/main/groovy/util/Peticiones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/app/MainSwing.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/app/MainSwing.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/app/mainTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/app/mainTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/domain/ParametrosDet.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/domain/ParametrosDet.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/domain/Peticion.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/domain/Peticion.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/groovy/util/Menu.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/util/Menu.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/util/Peticiones.groovy" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,43 +35,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Doc/tareas">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="79" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/app/mainTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/domain/Servicio.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="28" column="42" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="42" />
-              <folding>
-                <element signature="e#28#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/app/main.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/util/Menu.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="43" column="41" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="41" />
-              <folding>
-                <element signature="e#26#65#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -70,17 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/util/DbUtil.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="123" column="28" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Doc/tareas">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="78" selection-start-line="2" selection-start-column="78" selection-end-line="2" selection-end-column="78" />
+            <state relative-caret-position="418">
+              <caret line="324" column="207" selection-start-line="324" selection-start-column="198" selection-end-line="324" selection-end-column="207" />
             </state>
           </provider>
         </entry>
@@ -88,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/app/MainSwing.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+            <state relative-caret-position="2175">
+              <caret line="145" selection-start-line="145" selection-end-line="145" />
               <folding>
                 <element signature="e#25#62#0" expanded="true" />
               </folding>
@@ -100,11 +76,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/app/mainFrame.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="77">
+              <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
               <folding>
                 <element signature="e#25#77#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/util/swing/widgets.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+              <folding>
+                <element signature="e#15#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/app/main.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -120,6 +117,7 @@
       <find>addPropertyChangeListener</find>
       <find>color</find>
       <find>createMenuTree</find>
+      <find>&quot;</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main</dir>
@@ -158,15 +156,16 @@
         <option value="$PROJECT_DIR$/src/main/groovy/tmp" />
         <option value="$PROJECT_DIR$/src/main/groovy/util/DbUtil.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/prueba.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/domain/ParametrosDet.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/domain/PeticionDet.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/domain/Peticion.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/app/main.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/app/mainTest.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/util/Menu.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/domain/Servicio.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/domain/ParametrosDet.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/app/mainTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/domain/Peticion.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/app/MainSwing.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/util/Menu.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/domain/DatosBA.groovy" />
         <option value="$PROJECT_DIR$/Doc/tareas" />
       </list>
     </option>
@@ -178,8 +177,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="244" />
-    <option name="y" value="55" />
+    <option name="x" value="187" />
+    <option name="y" value="196" />
     <option name="width" value="985" />
     <option name="height" value="720" />
   </component>
@@ -188,8 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,6 +237,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="groovy" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="mainFrame" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="PortalSw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortalSw" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="MainSwing" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
@@ -274,16 +280,34 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="groovy" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="DbUtil.groovy" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="swing" type="462c0819:PsiDirectoryNode" />
+              <item name="Formulario.groovy" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="PortalSw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="PortalSw" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="swing" type="462c0819:PsiDirectoryNode" />
+              <item name="widgets.groovy" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="PortalSw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PortalSw" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="DbUtil.groovy" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,12 +338,25 @@
     </option>
   </component>
   <component name="RunManager" selected="Groovy.main">
-    <configuration name="GroovyTestSuite" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+    <configuration name="Widgets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="swing.Widgets" />
       <module name="PortalSw" />
-      <setting name="path" value="file://$PROJECT_DIR$/src/test/groovy/util/GroovyTestSuite.groovy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="swing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Formulario" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="PortalSw" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/main/groovy/util/swing/Formulario.groovy" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/src/test/groovy/util" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/main/groovy/util/swing" />
       <setting name="debug" value="false" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -358,24 +395,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="prueba" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
-      <module name="PortalSw" />
-      <setting name="path" value="file://$PROJECT_DIR$/src/main/groovy/prueba.groovy" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/src/main/groovy" />
-      <setting name="debug" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Groovy.main" />
+        <item itemvalue="Groovy.Formulario" />
+        <item itemvalue="Application.Widgets" />
         <item itemvalue="Groovy.mainTest" />
         <item itemvalue="Groovy.MainSwing" />
-        <item itemvalue="Groovy.prueba" />
-        <item itemvalue="Groovy.GroovyTestSuite" />
       </list>
     </recent_temporary>
   </component>
@@ -495,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560191946094</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Actualización">
+      <created>1560523835590</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1560523835590</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -526,9 +559,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1213" height="999" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24678664" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28620395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -537,14 +569,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.45402297" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.86461014" weight="0.3218391" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7043702" weight="0.6586207" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85775495" visible="true" weight="0.3229885" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.69922876" weight="0.36091954" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32988507" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.1353899" side_tool="true" visible="true" weight="0.24597701" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.14224507" side_tool="true" visible="true" weight="0.3229885" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32988507" />
-      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49614397" weight="0.32988507" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49528706" weight="0.32988507" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.50042844" side_tool="true" weight="0.22643678" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -616,52 +648,47 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>swing.modelPetServ.rowsModel.value[0].PT_ESTADOPETICION='Finalizado Exitoso'</expression-string>
+        <expression-string>datosBA</expression-string>
         <language-id>Groovy</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>swing.modelPetServ.rowsModel.value[0]</expression-string>
+        <expression-string>numValorBusquedaField.text</expression-string>
         <language-id>Groovy</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>swing.modelPetServ.rowsModel</expression-string>
+        <expression-string>result</expression-string>
         <language-id>Groovy</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>swing.modelPetServ</expression-string>
+        <expression-string>DbUtilInventario.sql.dataSet('CONSULTA_DATOS_BA').rows()</expression-string>
         <language-id>Groovy</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>swing</expression-string>
+        <expression-string>DatosBA.declaredFields[0..19]</expression-string>
         <language-id>Groovy</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>swing.SE_CODIGOSERVICIO</expression-string>
+        <expression-string>DatosBA.declaredFields</expression-string>
         <language-id>Groovy</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>swing.modelPet.rowsModel.value[6].PD_INTERFACE=INT.SIGRES.CRM.004</expression-string>
+        <expression-string>DatosBA.declaredFields[0..2]</expression-string>
         <language-id>Groovy</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>swing.modelPet.rowsModel.value[6]</expression-string>
+        <expression-string>DatosBA.declaredFields[1..2]</expression-string>
         <language-id>Groovy</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>swing.modelPet.rowsModel.value[0]</expression-string>
-        <language-id>Groovy</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>swing.modelPet.rowsModel.value</expression-string>
+        <expression-string>DatosBA.declaredFields[1-2]</expression-string>
         <language-id>Groovy</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -747,16 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/swing/Formulario.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.sdkman/candidates/groovy/2.5.6/lib/groovy-2.5.6.jar!/org/codehaus/groovy/reflection/CachedMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -788,44 +805,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/swing/widgets.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="31" lean-forward="true" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
-          <folding>
-            <element signature="e#15#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/util/GroovyTestSuite.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.sdkman/candidates/groovy/2.5.6/lib/groovy-2.5.6.jar!/groovyjarjarasm/asm/ClassWriter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#1487#1488#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/domain/ParametrosDet.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/domain/PeticionDet.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -846,10 +829,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy" />
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/Peticiones.groovy" />
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/domain/Servicio.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#28#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/domain/PeticionDet.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/groovy/2.5.6/lib/groovy-2.5.6.jar!/org/apache/groovy/internal/util/UncheckedThrow.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#389#390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/domain/ParametrosDet.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/groovy/2.5.6/lib/groovy-2.5.6.jar!/groovyjarjarasm/asm/ClassWriter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#1487#1488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/Menu.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="73" column="76" lean-forward="true" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
+          <folding>
+            <element signature="e#26#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/domain/Peticion.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="321">
+          <caret line="38" selection-start-line="38" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="e#28#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/domain/DatosBA.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#28#56#0" expanded="true" />
           </folding>
@@ -858,86 +907,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/app/mainTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        <state relative-caret-position="420">
+          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Doc/tareas">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="79" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/util/DbUtil.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="123" column="28" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/app/mainFrame.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="e#25#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/Menu.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="41" />
-          <folding>
-            <element signature="e#26#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/app/main.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/app/mainSwing.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="52" column="81" lean-forward="true" selection-start-line="52" selection-start-column="81" selection-end-line="52" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/Peticiones.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <element signature="e#26#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="418">
+          <caret line="324" column="207" selection-start-line="324" selection-start-column="198" selection-end-line="324" selection-end-column="207" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/app/MainSwing.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+        <state relative-caret-position="2175">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
           <folding>
             <element signature="e#25#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/domain/Servicio.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/app/mainFrame.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="42" />
+        <state relative-caret-position="77">
+          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
           <folding>
-            <element signature="e#28#56#0" expanded="true" />
+            <element signature="e#25#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Doc/tareas">
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/swing/Formulario.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="78" selection-start-line="2" selection-start-column="78" selection-end-line="2" selection-end-column="78" />
+        <state>
+          <caret column="32" selection-start-column="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/util/swing/widgets.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding>
+            <element signature="e#15#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/app/main.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
         </state>
       </provider>
     </entry>

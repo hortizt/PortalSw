@@ -25,4 +25,5 @@ swing.numServicioField.text='44100920'
 swing.btnEnviarServicio.doClick() ;
 assert swing.SE_NUMSERVICIO.text =='44100920'
 assert swing.SE_CODIGOSERVICIO.text =='2991'
+assert swing.SE_ESTADOSERVICIO.text =='Desactivado'
 assert swing.modelPetServ.rowsModel.value[0].PT_ESTADOPETICION=='Finalizado Exitoso'

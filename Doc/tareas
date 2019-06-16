@@ -1,4 +1,5 @@
-
+- Introducir un check para filtras por cliente o por usuario
+- Si pulsamos en medio del arbol del menu, debe de limpiarse el panel principal
 - Sacar la inicializacion de la base de datos fuera
 - Servicio : getServicioIdServicio y getServicioNumServicio se pueden unificar
 - Refactorización para sacar a otro fichero logica de ventanas y de la BBDD
