@@ -1,27 +1,39 @@
 package main.groovy.util
-@Grab('org.hsqldb:hsqldb:2.3.2')
-@GrabConfig(systemClassLoader=true)
+//@Grab('org.hsqldb:hsqldb:2.3.2')
+//@GrabConfig(systemClassLoader=true)
 
 import groovy.sql.Sql
 
-
-class DbUtilMQM {
+class DbUtil {
     def static user = 'sa'
     def static password = ''
     def static driver ='org.hsqldb.jdbcDriver'
     def static url = 'jdbc:hsqldb:mem:MQM'
     def static sql
+    def static config
 
-    static init(){
-        sql = Sql.newInstance(url, user, password, driver)
+
+}
+
+class DbUtilMQM extends DbUtil {
+    static init(configFile){
+        //initConfig()
+
+        this.config = configFile
+
+        this.url=    this.config.bbdd.mqm.url.text()
+        this.driver=    this.config.bbdd.mqm.driver.text()
+        this.user=      this.config.bbdd.mqm.user.text()
+        this.password=  this.config.bbdd.mqm.pasword.text()
+        this.sql = Sql.newInstance(this.url, this.user, this.password, this.driver)
     }
 
-    static create() {
+    static close() {
         sql.close()
     }
 
-    static bootStrap (){
-        init()
+    static bootStrap (configFile){
+        init(configFile)
         sql.execute '''
 CREATE TABLE PS_PETICION(
 PT_IDPETICION INTEGER, 
@@ -276,26 +288,30 @@ Insert into PS_PARAMETROSDET (PD_IDPARAMETRO,PD_IDDETALLE,PD_DESCRIPCION,PD_ACTI
 Insert into PS_PARAMETROSDET (PD_IDPARAMETRO,PD_IDDETALLE,PD_DESCRIPCION,PD_ACTIVO) values ('4','13','Baja IPTV','S');
 '''
     }
+
 }
 
 
-class DbUtilInventario {
-    def static user = 'sa'
-    def static password = ''
-    def static driver ='org.hsqldb.jdbcDriver'
-    def static url = 'jdbc:hsqldb:mem:Inventario'
-    def static sql
+class DbUtilInventario extends DbUtil {
 
-    static init(){
-        sql = Sql.newInstance(url, user, password, driver)
+    static init(configFile){
+
+        this.config = configFile
+
+        this.url=      this.config.bbdd.inventario.url.text()
+        this.driver=   this.config.bbdd.inventario.driver.text()
+        this.user=     this.config.bbdd.inventario.user.text()
+        this.password= this.config.bbdd.inventario.pasword.text()
+        this.sql = Sql.newInstance(this.url, this.user, this.password, this.driver)
     }
 
-    static create() {
+
+    static close() {
         sql.close()
     }
 
-    static bootStrap (){
-        init()
+    static bootStrap (configFile){
+        init(configFile)
         sql.execute '''
 CREATE TABLE "CONSULTA_DATOS_BA" 
 (
@@ -326,3 +342,5 @@ Insert into CONSULTA_DATOS_BA (SERVICIO,CLIENTE,ESTADO_SER,TELEFONO,CTA_PADRE,PS
 '''
 }
 }
+
+

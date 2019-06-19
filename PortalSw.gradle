@@ -1,0 +1,37 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+group = "main.groovy.app"
+version = "1.0"
+
+mainClassName = 'main.groovy.app.main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.0.0'
+    compile 'org.hsqldb:hsqldb:2.3.2'
+
+}
+
+
+task uberjar(type: Jar,dependsOn:[':compileJava',':compileGroovy']) {
+    from files(sourceSets.main.output.classesDir)
+    from configurations.runtime.asFileTree.files.collect { zipTree(it) }
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+}
+
+task copyJar(type: Copy,dependsOn:':uberjar') {
+    from "/home/honorio/IdeaProjects/PortalSw/build/libs/PortalSw-1.0.jar"
+    into "/home/honorio/IdeaProjects/PortalSw/test/"
+}
+
+task runFinalJar(type: JavaExec,dependsOn:':copyJar') {
+    classpath = files('test/PortalSw-1.0.jar')
+    main = mainClassName
+}

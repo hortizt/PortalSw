@@ -1,5 +1,14 @@
-package main.groovy.app.MainSwing
+package main.groovy.app
 import main.groovy.app.MainSwing
+import main.groovy.util.DbUtilInventario
+import main.groovy.util.DbUtilMQM
+
+
+def Config= new XmlParser().parse(new File(getClass().getClassLoader().getResource("config.xml").getFile()))
+
+
+DbUtilMQM.bootStrap(Config)
+DbUtilInventario.bootStrap(Config)
 
 def swing=MainSwing.getMainSwing()
 assert swing
@@ -27,3 +36,11 @@ assert swing.SE_NUMSERVICIO.text =='44100920'
 assert swing.SE_CODIGOSERVICIO.text =='2991'
 assert swing.SE_ESTADOSERVICIO.text =='Desactivado'
 assert swing.modelPetServ.rowsModel.value[0].PT_ESTADOPETICION=='Finalizado Exitoso'
+
+// Panel Datos BA
+swing.numValorBusquedaField.text='CC7163548'
+swing.btnEnviarDatosBA.doClick();
+assert swing.SERVICIO.text =='004392532'
+assert swing.CLIENTE.text =='CC7163548'
+assert swing.ESTADO_SER.text =='EN SERVICIO'
+assert swing.TELEFONO.text=='87432124'

@@ -26,14 +26,22 @@ class DatosBA {
     def IP_WAN         
     def MASCARA_IP
 
-    static DatosBA getDatosBA(valorBusqueda){
+    static DatosBA getDatosBAByCca(valorBusqueda){
+        def result = DbUtilInventario.sql.dataSet('CONSULTA_DATOS_BA').rows().findAll {
+            it.CLIENTE == valorBusqueda
+        }
+        if (result.size() == 1)
+            return result[0]
+        else    null
+    }
+
+    static DatosBA getDatosBAByServ(valorBusqueda){
         def result = DbUtilInventario.sql.dataSet('CONSULTA_DATOS_BA').rows().findAll {
             it.SERVICIO == valorBusqueda
         }
         if (result.size() == 1)
             return result[0]
         else    null
-
     }
 
     static void setValores(datosBA,auxDatosBA) {

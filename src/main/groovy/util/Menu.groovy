@@ -19,7 +19,8 @@ class Menu {
              menu.each { item -> item.value.visible = false }
              menu[sele2.trim()].visible = true
          } else {
-             println "Nada"
+             menu.each { item -> item.value.visible = false }
+             menu['Panel Vacio'].visible=true
          }
      }
 
@@ -80,9 +81,15 @@ class Menu {
         }
     }
 
-    static String btnEnviarDatosBAAccion(String valorBusqueda, DatosBA datosBA) {
+    static String btnEnviarDatosBAAccion(String valorBusqueda, DatosBA datosBA, boolean ccaSelected) {
+        def auxDatosBA
         DatosBA.clearValores(datosBA)
-        def auxDatosBA = DatosBA.getDatosBA(valorBusqueda)
+
+        if (ccaSelected) {
+            auxDatosBA = DatosBA.getDatosBAByCca(valorBusqueda)
+        } else {
+            auxDatosBA = DatosBA.getDatosBAByServ(valorBusqueda)
+        }
         if (auxDatosBA) {
             DatosBA.setValores(datosBA, auxDatosBA)
             return "OK"

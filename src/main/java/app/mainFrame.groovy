@@ -1,4 +1,4 @@
-package main.groovy.app
+package main.java.app
 
 import main.java.swing.tabledialog.DialogTableTester
 

@@ -1,30 +1,24 @@
 package main.groovy.app
 
-import main.groovy.domain.PeticionDet
+
 import java.awt.BorderLayout
 import java.awt.Color
 import java.awt.Font
 import groovy.swing.SwingBuilder
 import javax.swing.*
-import main.groovy.util.DbUtilMQM
-import main.groovy.util.DbUtilInventario
 import main.groovy.domain.Peticion
 import main.groovy.domain.Servicio
 import main.groovy.domain.DatosBA
-import main.groovy.domain.ParametrosDet
 import main.groovy.util.Menu
 
 class MainSwing {
 
-
-
     static SwingBuilder getMainSwing() {
 
+        def panelPeticiones, panelServicios, panelDatosBA, panelVacio
 
-        def panelPeticiones, panelServicios, panelDatosBA
         def menu = [:]
         Font fontlbl = new Font("Courier", Font.PLAIN, 13)
-
         ObservableList dataPeticionDet = []
         ObservableList dataPetServ = []
 
@@ -32,8 +26,7 @@ class MainSwing {
         def servicio = new Servicio()
         def datosBA = new DatosBA()
 
-        DbUtilMQM.bootStrap()
-        DbUtilInventario.bootStrap()
+
 
         def swing = new SwingBuilder()
         def frame = swing.frame(id:'frame', title: 'Demo', size: [1000, 900]) {
@@ -142,14 +135,20 @@ class MainSwing {
                                             td { label 'Valor Busqueda:' }
                                             td { textField id: 'numValorBusquedaField', columns: 20 }
                                             td { button text:'enviar', id:'btnEnviarDatosBA', actionPerformed: {
-                                                if(Menu.btnEnviarDatosBAAccion(numValorBusquedaField.text, datosBA)=="OK"){
+                                                if(Menu.btnEnviarDatosBAAccion(numValorBusquedaField.text, datosBA,cca.selected)=="OK"){
                                                     mensajeDatosBAlbl.text = '   '
                                                 } else {
-                                                    mensajeDatosBAlbl.text = 'No existe el servicio '
+                                                    mensajeDatosBAlbl.text = "No existe el ${(cca.selected)?'Cliente':'Servicio'}"
                                                 }
                                             }
                                             }
-                                            td { label text: '                                               ' }
+                                            td {
+                                                panel ( /*border: compoundBorder([emptyBorder(10), titledBorder('TipoConsulta:')])*/) {
+                                                    buttonGroup(id:'cmd');
+                                                    radioButton(id:'cca', text:'cca', buttonGroup:cmd, actionPerformed:{}, selected:true)
+                                                    radioButton(id:'serv', text:'serv', buttonGroup:cmd, actionPerformed:{})
+                                                }
+                                            }
                                         }
                                         tr {
                                             td { label(id: 'mensajeDatosBAlbl', text: '   ').setForeground(Color.RED)  }
@@ -165,6 +164,11 @@ class MainSwing {
                                     }
                                 }
                             }
+
+                    panelVacio =   panel(id:'panelDatosBA',layout: new BorderLayout()) {}
+
+
+
                 }
             }
         }
@@ -174,9 +178,11 @@ class MainSwing {
         panelPeticiones.visible = false
         panelServicios.visible = false
         panelDatosBA.visible = false
+        panelVacio.visible = true
         menu['Seguimiento Num Peticion'] = panelPeticiones
         menu['Peticiones por servicio'] = panelServicios
         menu['Datos Banda Ancha'] = panelDatosBA
+        menu['Panel Vacio'] = panelVacio
         return swing
     }
 }

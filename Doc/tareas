@@ -1,11 +1,18 @@
-- Introducir un check para filtras por cliente o por usuario
-- Si pulsamos en medio del arbol del menu, debe de limpiarse el panel principal
-- Sacar la inicializacion de la base de datos fuera
+- solventar el problema de la librería
+- generacion del jar
 - Servicio : getServicioIdServicio y getServicioNumServicio se pueden unificar
-- Refactorización para sacar a otro fichero logica de ventanas y de la BBDD
+- DatosBA: getDatosBAByCca y getDatosBAByServ Unificar
 - Probar si actualizamos la bbdd , consultamos a posteriori y obtenemos la información actualizadas
-- Pulsar click sobre un campo y acceder a la ventana apropiada. Si  pulsamos petición acceder a la ventana de Petición.
-- configurar via XML los parametros de conexión mediante un fichero config.xml
-- Se pueda traducir la descripción PT_IDPETICION por una más entendible.
-- test para el GUI
-- mejorar la funcion PeticionDet.toString
+- test para el GUI en JUNIT y funcional en caso que sea
+- revisar todos los test
+- limpiar el código
+- habilitar el text para el build
+
+
+###
+gradle -b PortalSw.gradle clean
+gradle -b PortalSw.gradle uberjar
+gradle -b PortalSw.gradle copyJar
+gradle -b PortalSw.gradle runFinalJar
+java -jar build/libs/PortalSw-1.0.jar
+
