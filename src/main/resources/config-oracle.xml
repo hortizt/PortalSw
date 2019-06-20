@@ -1,0 +1,16 @@
+<config>
+    <bbdd>
+        <mqm>
+            <url>jdbc:oracle:thin:@myhost:1521:orcl</url>
+            <driver>oracle.jdbc.driver.OracleDriver</driver>
+            <user>sa</user>
+            <pasword></pasword>
+        </mqm>
+        <inventario>
+            <url>jdbc:hsqldb:mem:Inventario</url>
+            <driver>org.hsqldb.jdbcDriver</driver>
+            <user>sa</user>
+            <pasword></pasword>
+        </inventario>
+    </bbdd>
+</config>

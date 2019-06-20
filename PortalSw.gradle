@@ -14,7 +14,7 @@ repositories {
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.0.0'
     compile 'org.hsqldb:hsqldb:2.3.2'
-
+    compile files('libs/ojdbc7.jar')
 }
 
 
@@ -28,10 +28,10 @@ task uberjar(type: Jar,dependsOn:[':compileJava',':compileGroovy']) {
 
 task copyJar(type: Copy,dependsOn:':uberjar') {
     from "/home/honorio/IdeaProjects/PortalSw/build/libs/PortalSw-1.0.jar"
-    into "/home/honorio/IdeaProjects/PortalSw/test/"
+    into "/home/honorio/IdeaProjects/PortalSw/"
 }
 
 task runFinalJar(type: JavaExec,dependsOn:':copyJar') {
-    classpath = files('test/PortalSw-1.0.jar')
+    classpath = files('PortalSw-1.0.jar')
     main = mainClassName
 }

@@ -1,15 +1,20 @@
 package main.groovy.app
 
-
+import javax.swing.event.TreeSelectionListener
 import java.awt.BorderLayout
 import java.awt.Color
 import java.awt.Font
 import groovy.swing.SwingBuilder
 import javax.swing.*
+import java.beans.PropertyChangeListener
+import java.beans.PropertyChangeSupport
+import javax.swing.event.TreeSelectionEvent
 import main.groovy.domain.Peticion
 import main.groovy.domain.Servicio
 import main.groovy.domain.DatosBA
 import main.groovy.util.Menu
+
+import java.beans.PropertyChangeEvent
 
 class MainSwing {
 
@@ -32,7 +37,21 @@ class MainSwing {
         def frame = swing.frame(id:'frame', title: 'Demo', size: [1000, 900]) {
             panel(id: 'panelPrincipal', layout: new BorderLayout()) {
                 panel(id:'panelMenu',constraints: BorderLayout.WEST, border: compoundBorder([emptyBorder(10), titledBorder('Menu')])) {
-                    tree(id:'treeMenu', Menu.createMenuTree()).getSelectionModel().addTreeSelectionListener({ e -> Menu.accionSeleccionMenu(e, menu) })
+                    tree(id:'treeMenu', Menu.createMenuTree()).getSelectionModel().addTreeSelectionListener(new TreeSelectionListener() {
+                        public void valueChanged(TreeSelectionEvent e) {
+                            def seleccion1 = (e?.source?.selection).toString()
+                            if ((seleccion1.replace('[[', '').replace(']]', '').split(',')).size() == 3) {
+                                def sele2 = seleccion1.replace('[[', '').replace(']]', '').split(',')[2]
+                                println sele2
+                                menu.each { item -> item.value.visible = false }
+                                menu[sele2.trim()].visible = true
+                            } else {
+                                menu.each { item -> item.value.visible = false }
+                                menu['Panel Vacio'].visible = true
+                            }
+                        }
+
+                    })
                 }
                 panel(id: 'paneles', border: compoundBorder([emptyBorder(10), titledBorder('Informacion')])) {
                     panelPeticiones =
@@ -77,7 +96,16 @@ class MainSwing {
                                         }
                                     }
                                 }
-                                dataPeticionDet.addPropertyChangeListener({ e -> modelPet.fireTableDataChanged() })
+                                def auxModelPet=modelPet
+                                dataPeticionDet.addPropertyChangeListener(
+                                        //{ e -> modelPet.fireTableDataChanged() }
+                                        new PropertyChangeListener(){
+                                            public void propertyChange(PropertyChangeEvent e)
+                                            {
+                                                auxModelPet.fireTableDataChanged()
+                                            }
+                                        }
+                                )
                             }
                     panelServicios =
                             panel(id:'panelPeticiones',layout: new BorderLayout()) {
@@ -125,7 +153,17 @@ class MainSwing {
                                         }
                                     }
                                 }
-                                dataPetServ.addPropertyChangeListener({ e -> modelPetServ.fireTableDataChanged() })
+                                //dataPetServ.addPropertyChangeListener({ e -> modelPetServ.fireTableDataChanged() })
+                                def auxmodelPetServ=modelPetServ
+                                dataPeticionDet.addPropertyChangeListener(
+                                        //{ e -> modelPet.fireTableDataChanged() }
+                                        new PropertyChangeListener(){
+                                            public void propertyChange(PropertyChangeEvent e)
+                                            {
+                                                auxmodelPetServ.fireTableDataChanged()
+                                            }
+                                        }
+                                )
                             }
                     panelDatosBA =
                             panel(id:'panelDatosBA',layout: new BorderLayout()) {

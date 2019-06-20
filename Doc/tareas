@@ -1,5 +1,6 @@
-- solventar el problema de la librería
-- generacion del jar
+- Conseguir que funcione gradle desde Jidea
+
+- mainGUItest introducirlo en los test
 - Servicio : getServicioIdServicio y getServicioNumServicio se pueden unificar
 - DatosBA: getDatosBAByCca y getDatosBAByServ Unificar
 - Probar si actualizamos la bbdd , consultamos a posteriori y obtenemos la información actualizadas
