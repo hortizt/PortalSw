@@ -42,7 +42,7 @@ class MainSwing {
                             def seleccion1 = (e?.source?.selection).toString()
                             if ((seleccion1.replace('[[', '').replace(']]', '').split(',')).size() == 3) {
                                 def sele2 = seleccion1.replace('[[', '').replace(']]', '').split(',')[2]
-                                println sele2
+                                //println sele2
                                 menu.each { item -> item.value.visible = false }
                                 menu[sele2.trim()].visible = true
                             } else {
@@ -155,7 +155,7 @@ class MainSwing {
                                 }
                                 //dataPetServ.addPropertyChangeListener({ e -> modelPetServ.fireTableDataChanged() })
                                 def auxmodelPetServ=modelPetServ
-                                dataPeticionDet.addPropertyChangeListener(
+                                dataPetServ.addPropertyChangeListener(
                                         //{ e -> modelPet.fireTableDataChanged() }
                                         new PropertyChangeListener(){
                                             public void propertyChange(PropertyChangeEvent e)

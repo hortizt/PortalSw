@@ -6,6 +6,13 @@ package main.groovy.util
 import groovy.sql.Sql
 
 class DbUtil {
+
+
+
+}
+
+class DbUtilMQM extends DbUtil {
+
     def static user = 'sa'
     def static password = ''
     def static driver ='org.hsqldb.jdbcDriver'
@@ -13,10 +20,6 @@ class DbUtil {
     def static sql
     def static config
 
-
-}
-
-class DbUtilMQM extends DbUtil {
     static init(configFile){
         //initConfig()
 
@@ -34,6 +37,7 @@ class DbUtilMQM extends DbUtil {
     }
 
     static bootStrap (configFile){
+        if (sql != null) return
         init(configFile)
         sql.execute '''
 CREATE TABLE PS_PETICION(
@@ -295,6 +299,14 @@ Insert into PS_PARAMETROSDET (PD_IDPARAMETRO,PD_IDDETALLE,PD_DESCRIPCION,PD_ACTI
 
 class DbUtilInventario extends DbUtil {
 
+    def static user = 'sa'
+    def static password = ''
+    def static driver ='org.hsqldb.jdbcDriver'
+    def static url = 'jdbc:hsqldb:mem:MQM'
+    def static sql
+    def static config
+
+
     static init(configFile){
 
         this.config = configFile
@@ -311,7 +323,9 @@ class DbUtilInventario extends DbUtil {
         sql.close()
     }
 
+
     static bootStrap (configFile){
+        if (this.sql != null) return
         init(configFile)
         sql.execute '''
 CREATE TABLE "CONSULTA_DATOS_BA" 

@@ -1,19 +1,12 @@
-- Conseguir que funcione gradle desde Jidea
+## Tareas
 
-- mainGUItest introducirlo en los test
-- Servicio : getServicioIdServicio y getServicioNumServicio se pueden unificar
-- DatosBA: getDatosBAByCca y getDatosBAByServ Unificar
-- Probar si actualizamos la bbdd , consultamos a posteriori y obtenemos la información actualizadas
-- test para el GUI en JUNIT y funcional en caso que sea
-- revisar todos los test
-- limpiar el código
-- habilitar el text para el build
-
-
-###
+### Ejecución Gradle
 gradle -b PortalSw.gradle clean
 gradle -b PortalSw.gradle uberjar
 gradle -b PortalSw.gradle copyJar
 gradle -b PortalSw.gradle runFinalJar
+gradle -b PortalSw.gradle test
+gradle -b PortalSw.gradle Task
 java -jar build/libs/PortalSw-1.0.jar
+
 

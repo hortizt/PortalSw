@@ -10,7 +10,7 @@ import javax.swing.JTree
 import javax.swing.tree.DefaultMutableTreeNode
 
 class Menu {
-
+/*
      static accionSeleccionMenu={e,menu->
          def seleccion1 = (e?.source?.selection).toString()
          if ((seleccion1.replace('[[', '').replace(']]', '').split(',')).size() == 3) {
@@ -23,7 +23,7 @@ class Menu {
              menu['Panel Vacio'].visible=true
          }
      }
-
+*/
     static JTree createMenuTree() {
         def topNode = new DefaultMutableTreeNode('Menu')
         def segServ = new DefaultMutableTreeNode('Seguimiento Servicios               ')
@@ -32,11 +32,11 @@ class Menu {
         segServ.add(new DefaultMutableTreeNode('Peticiones por servicio'))
         segServ.add(new DefaultMutableTreeNode('Datos Banda Ancha'))
 
-        def maniobras = new DefaultMutableTreeNode('Maniobras')
-        maniobras.add(new DefaultMutableTreeNode('Maniobras 1'))
+        //def maniobras = new DefaultMutableTreeNode('Maniobras')
+        //maniobras.add(new DefaultMutableTreeNode('Maniobras 1'))
 
         topNode.add(segServ)
-        topNode.add(maniobras)
+        //topNode.add(maniobras)
         def projectTree = new JTree(topNode)
         return projectTree
     }

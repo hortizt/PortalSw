@@ -1,4 +1,6 @@
 package test.groovy.util
 
-//def suite = AllTestSuite.suite(".", "*Test.groovy")
-//junit.textui.TestRunner.run(suite)
+def DbUtilTest = AllTestSuite.suite(".", "DbUtilTest.groovy")
+def mainUITest = AllTestSuite.suite(".", "mainUITest.groovy")
+junit.textui.TestRunner.run(DbUtilTest)
+junit.textui.TestRunner.run(mainUITest)

@@ -19,6 +19,8 @@ class Servicio {
     def SE_FECHACREACION
     def SE_FECHAMODIFICACION
     String toString() { "Servicio[SE_IDSERVICIO=$SE_IDSERVICIO,SE_NUMSERVICIO=$SE_NUMSERVICIO,SE_NUMTELEFONO=$SE_NUMTELEFONO]" }
+
+
     static Servicio getServicioIdServicio(idServicio){
         def servicio = DbUtilMQM.sql.dataSet('PS_SERVICIO').rows().findAll{
             idServicio=it.SE_IDSERVICIO
